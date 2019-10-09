@@ -1,0 +1,1352 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/other/favicon.ico" />
+		<title>メンバー紹介 ｜Gakudai Orchestra</title>
+		<!--Javascript-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" defer></script>
+		<script src='codes/slide_menu_script.js' defer></script>
+		<script src="codes/members_script.js" defer></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-43913032-8', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<!--CSS-->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="codes/style.css" media="screen, projection, print">
+		<link rel="stylesheet" href="codes/header.css" media="screen, projection, print">
+		<link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+		<style>
+		body{
+			background: url(images/about/background.jpeg) repeat;
+			background-repeat: repeat;
+		}
+		/*Main Contents*/
+		html{
+			overflow: auto;
+		}
+		body{
+			overflow: hidden;
+		}
+		#main-contents-container{
+			position: absolute;
+			display: inline-block;
+			background-image: url("images/about/background.jpeg");
+			width: 100%;
+			height: 100%;
+			height: 100vh;
+			margin: auto;
+			overflow: hidden;
+		}
+		/*Art*/
+		#stage_image_container{
+			position: relative;
+			display: block;
+			margin: auto;
+			width: 100%;
+			overflow: visible;
+			max-width: 750px;
+			margin-top: 100px;
+		}
+		#page_description{
+			position: relative;
+			display: block;
+			width: 90%;
+			right: 0;
+			left: 0;
+			text-align: center;
+			top: 80px;
+			margin: auto;
+			margin-bottom: 10px;
+		}
+		#members_image{
+			width: 300px;
+		}
+		#stage_image{
+			width: 100%;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			opacity: 0.7;
+		}
+		.instruments{
+			opacity: 0;
+			position: absolute;
+			z-index: 50;
+			margin-top: -20px;
+			
+		}
+		.instruments.hover, .instruments:hover{
+			cursor: pointer;
+			-webkit-transform: scale(1.2);
+               -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                 -o-transform: scale(1.2);
+                    transform: scale(1.2);
+		}
+		#timpani{
+			width: 13%;
+			top: 3%;
+			left: 17%;
+		}
+		#horn{
+			width: 18%;
+			top: 3.5%;
+			left: 31%;
+		}
+		#trumpet{
+			width: 18%;
+			top: 6%;
+			left: 51%;
+		}
+		#trombone{
+			width: 18%;
+			top: 8%;
+			left: 69%;
+		}
+		#flute{
+			width: 13%;
+			top: 31%;
+			left: 27%;
+		}
+		#oboe{
+			width: 4%;
+			top: 20.5%;
+			left: 44%;
+		}
+		#clarinet{
+			width: 4.5%;
+			top: 22%;
+			left: 57%;
+		}
+		#basoon{
+			width: 8%;
+			top: 24%;
+			left: 68%;
+		}
+		#violin{
+			width: 15%;
+			top: 63%;
+			left: 21%;
+		}
+		#viola{
+			width: 11%;
+			top: 52%;
+			left: 39%;
+		}
+		#cello{
+			width: 15%;
+			top: 46%;
+			left: 51%;
+		}
+		#contrabass{
+			width: 20%;
+			top: 46%;
+			left: 67%;
+		}
+		#conductor{
+			margin-top: 20px;
+			width: 10%;
+			top: 80%;
+			left: 47%;
+		}
+		/*Window*/
+		#modal_window{
+			position: absolute;
+			display: block;
+			z-index: 500;
+			top: 110%;
+			width: 100%;
+			height: 100%;
+			margin: auto;
+			background-color: rgba(255, 255, 255, 1);
+			overflow-y: scroll;
+			-webkit-backface-visibility:hidden;
+			  backface-visibility:hidden;
+			  -webkit-overflow-scrolling: touch;
+			  -webkit-overflow-scrolling: touch
+		}
+		#modal_window_close_button{
+			position: fixed;
+			cursor: pointer;
+			font-weight: 200;
+			display: block;
+		    font-size: 40px;
+		    width: 50%;
+		    right: 5%;
+		    text-align: right;
+		    color: #000;
+		    z-index: 100;
+		}
+		#darkening_layer{
+			position:absolute;
+			height: 0;
+			opacity: 0;
+			top: 0;
+			left:0px;
+			width:100%;
+			background-color: rgba(10, 10, 10, 0.6);
+			z-index: 150;
+		}
+		.modal_window_picture{
+			position: relative;
+			opacity: 1;
+			z-index: 550;
+			left: 0;
+			right: 0;
+			margin: auto;
+			display: none;
+			max-height: 80%;
+			max-width: 80%;
+		}
+		.modal_window_innercontainer{
+			position: absolute;
+			right: 0;
+			left: 0;
+			margin: auto;
+			display: block;
+			width: 90%;
+			max-width: 500px;
+			margin: auto;
+			margin-top: 30px;
+			margin-bottom: 20px;
+			display: none;
+		}
+		.modal_window_image{
+			max-width: 80%;
+			position: relative;
+			display: block;
+			margin-top: 5px;
+			margin: auto;
+			margin-bottom: 25px;
+		}
+		.instrument_name{
+			font-family: 'Playball', cursive;
+			display: block;
+			width: 80%;
+			text-align: center;
+			margin: auto;
+			margin-top: 10px;
+			font-size: 45px;
+			height: 45px;
+			overflow: visible;
+			border-bottom: 2px solid #000;
+			color: #000;
+		}
+		.outer_comment_box{
+			margin: 20px;
+			padding: 10px;
+		}
+		.comment_box{
+			width: 100%;
+			min-height: 150px;
+			display: block;
+			margin: auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.comments{
+			display: block;
+			position: relative;
+			width: 90%;
+			border-radius: 5px;
+			border: 1px solid #CCC;
+			background-size: cover;
+			background-image: url("images/about/background.jpeg");
+			margin: auto;
+		}
+		.people{
+			margin: auto;
+			height: 64px;
+			padding: 15px;
+			margin-bottom: 15px;
+			background-color: #fff;
+			border-radius: 5px 5px 0 0;
+			box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.1);
+			-webkit-box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.1);
+			-moz-box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.1);
+		}
+		.people-image-red{
+			position: absolute;
+			top: 12px;
+			left: 25px;
+			height: 60px;
+			width: 60px;
+			border-radius: 50%;
+			border: 3px solid #ed989f;
+			box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.3);
+			-webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.3);
+			-moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.3);
+		}
+		.people-image-blue{
+			position: absolute;
+			top: 12px;
+			left: 25px;
+			height: 60px;
+			width: 60px;
+			border-radius: 50%;
+			border: 3px solid #91d4f1;
+			box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.3);
+			-webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.3);
+			-moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.3);
+		}
+		.names{
+			height: 70px;
+			text-align: left;
+			width: 50%;
+			margin-left: 80px;
+		}
+		.inner_names{
+			display: inline-block;
+			position: relative;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			margin-left: 10px;
+		}
+		.position{
+			font-size: 20px;
+			position: absolute;
+			display: block;
+			font-family: 'Libre Baskerville', serif;
+			font-style: italic;
+			right: 20;
+			color: #999;
+			top: 35px;
+		}
+		.japanese_name{
+			font-size: 23px;
+			line-height: 100%;
+		}
+		.english_name{
+			font-size: 13px;
+			font-weight: 900;
+			color: #555;
+		}
+		.comment_box_instrument_image{
+			z-index: -10;
+			position: absolute;
+			opacity: 0.5;
+			max-height: 100%;
+			max-width: 40%;
+			top: 0;
+			bottom: 0;
+			right: 30;
+			margin: auto;
+		}
+		.actual_comment{
+			display: block;
+			z-index: 50;
+			position: relative;
+			padding: 20px;
+			height: auto;
+		}
+		@media screen and (max-width: 560px){
+			#members_image{
+				width: 150px;
+			}
+			.modal_window_close_button{
+				width: 90%;
+			}
+		}
+		@media screen and (max-width: 450px){
+			.japanese_name{
+				font-size: 18px;
+			}
+			.position{
+				font-size: 18px;
+				right: 10;
+			}
+		}
+		@media screen and (max-width: 350px){
+			.special{
+				font-size: 15px;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<div id='outmost' class='full-width'>
+			<div id='header-outercontainer' class='full-width'>
+				<img src='images/header/header-logo-text.png' id='header-logo-image' class='vertically-aligned' />
+				<div class='header-links-container'>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a href="index.html">ホーム</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a target="_blank" href="https://twitter.com/Gakudai_Orch">お知らせ</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a href="info.html">インフォ</a></p>
+					</div>
+					<div class='header-links  header-selected'>
+						<p class='vertically-aligned'><a href="members.html">メンバー</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a href="about.html">オケについて</a></p>
+					</div>
+				</div>
+				<a id='open_button'><i class="fa fa-bars"></i></a>
+			</div>
+			<div id='main-contents-container'>
+				<nav id="slide_menu">
+					<a id='menu_close_button'><span>×</span></a>
+					
+			        <ul>
+			            <li><a href="index.html"><i class="fa fa-home slide-icon"></i>　ホーム</a></li>
+			            <li><a target="_blank" href="https://twitter.com/Gakudai_Orch"><i class="fa fa-twitter slide-icon"></i>　お知らせ</a></li>
+						<li><a href="info.html"><i class="fa fa-info-circle slide-icon"></i>　インフォ</a></li>
+			            <li><a href="members.html"><i class="fa fa-user slide-icon"></i>　メンバー</a></li>
+			            <li><a href="about.html"><i class="fa fa-music slide-icon"></i>　オケについて</a></li>
+			        </ul>
+			    </nav>
+			    <div id='page_description'>
+			    	<p id='page_description_title'><img id='members_image' src='images/members/members.png' /></p>
+			    	<p id='page_description_description'>楽器をクリックしてみてください</p>
+			    </div>
+		    	<div id='stage_image_container'>
+			    	<img id='stage_image' src='images/members/clipart/stage.png'/>
+			    	<a id='timpani_link'><img id='timpani' class='instruments' src='images/members/clipart/timpani.png'/></a>
+			    	<img id='horn' class='instruments' src='images/members/clipart/horn.png'/>
+			    	<img id='trumpet' class='instruments' src='images/members/clipart/trumpet.png'/>
+			    	<img id='trombone' class='instruments' src='images/members/clipart/trombone.png'/>
+			    	<img id='flute' class='instruments' src='images/members/clipart/flute.png'/>
+			    	<img id='oboe' class='instruments' src='images/members/clipart/oboe.png'/>
+			    	<img id='clarinet' class='instruments' src='images/members/clipart/clarinet.png'/>
+			    	<img id='basoon' class='instruments' src='images/members/clipart/basoon.png'/>
+			    	<img id='violin' class='instruments' src='images/members/clipart/violin.png'/>
+			    	<img id='viola' class='instruments' src='images/members/clipart/viola.png'/>
+			    	<img id='cello' class='instruments' src='images/members/clipart/cello.png'/>
+			    	<img id='contrabass' class='instruments' src='images/members/clipart/contrabass.png'/>
+			    	<img id='conductor' class='instruments' src='images/members/clipart/conductor.png'/>
+			    </div>
+			    <div id='darkening_layer' onClick='close()'></div>
+			</div>
+			<div id='modal_window'>
+		    	<a id="modal_window_close_button">×</a>
+		    	<div class='modal_window_innercontainer' id='window-0'>
+			    	<img src='images/members/instruments_image/percussion.jpg' style='max-width: 40%' class='modal_window_image'>
+					<h2 class='instrument_name'>Percussion</h2>
+					<div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												めい
+											</div>
+											<div class='english_name'>
+												MEI
+											</div>
+										</div>
+										<div class='position'>
+											Perc.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/timpani.png">
+									「ぎょええええええ！」か「ぐぉええええええ！！」くらいしか言わない系女子です！<br />
+									附高のギャルと名高い(ウケる笑)<br />
+									もちろん叩き方もギャル。<br />
+									昔から太鼓をどんどこどんどこどんどこどんどこ叩いてるので成長が著しいです。<br />
+									「スネア上手くなったね」って褒められるほどです。<br />
+									ちなみに岸川さんは花粉症に悩まされています！助けてあげて！！<br />
+									(文章: Fl. かっぴ)
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												りこ
+											</div>
+											<div class='english_name'>
+												RIKO
+											</div>
+										</div>
+										<div class='position'>
+											Perc.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/timpani.png">
+									小学生の時から続けていたトランペットに別れを告げ、この度憧れのティンパニを担当することに。<br />
+									憧れの先輩に少しでも近づくため、メトロノームと向かい合う日々です！<br />
+									トランペットが恋しくなる、なんてこと、もちろんありませんよ…？！<br />
+									これからはパーカス一筋、決して浮気はいたしません！！<br />
+									 ところで最近の悩みはボキャブラリーの少なさ。特に形容詞の貧しさは、オケ部1☆<br />
+									語彙力もパーカスの実力も、少しでもUPしたい今日この頃。<br />
+									（文章: Fl. はるな）
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			    <div class='modal_window_innercontainer' id='window-1'>
+			   		<img src='images/members/instruments_image/horn.jpg' class='modal_window_image'>
+					<h2 class='instrument_name'>Horn</h2>
+					<div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												おーか
+											</div>
+											<div class='english_name'>
+												OHKA
+											</div>
+										</div>
+										<div class='position'>
+											Hr. I
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/horn.png">
+									ホルンは世界で一番素晴らしい楽器です。最初に言っておきます。(みんな自分の楽器が一番のはず…)<br />
+									実はオケの花形の某弦楽器も弾きます。ホルンよりずっと長くやってました。でもホルンの方が好きです。それほど素晴らしいんです。<br />
+									頑張っていることは部長のお仕事との両立。言い訳をせず、楽器ももっと上達したいと思ってます。<br />
+									最近の悩みは肩こり、あっいや、二人称が「部長」になりつつあること。嬉しい反面…さて、アイデンティティとは。
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-blue' src='images/members/people_image/blue-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												ふるぽん
+											</div>
+											<div class='english_name'>
+												FURUPON
+											</div>
+										</div>
+										<div class='position'>
+											Hr. II
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/horn.png">
+									何か楽器をできるようになりたい。そう思って挑戦したホルン。金管楽器の中で一番難しいとギネスに載っていたり、CやFなど初めての音楽用語に触れ、「初心者がやってよかったのかな？！」と初めてのことだらけで正直ビビりっぱなしの日々です。少しずつ吹けるようになり、ホルンの奥の深さと素晴らしさを感じています。<br />
+									もっとホルンを知るためにも勉強しないと…あ、学校の勉強もしないと…
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class='modal_window_innercontainer' id='window-2'>
+			    	<img src='images/members/instruments_image/trumpet.jpg' class='modal_window_image'>
+					<h2 class='instrument_name'>Trumpet</h2>
+					<div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												しーちゃん
+											</div>
+											<div class='english_name'>
+												SHI-CHAN
+											</div>
+										</div>
+										<div class='position'>
+											Tp. I
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/trumpet.png">
+									トランペットから始まりユーフォ・チューバからの再びトランペットという行ったり来たりの楽器人生です…!!気付けば金管楽器も9年目…ペットと
+									チューバという両極を経験したので勝手に金管楽器制覇した気になってます(笑)まだまだ高音が苦手です。誰か簡単に高音が出せる唇を開発してください。でもそんなことは言ってられない…!!顔を真っ赤にして吹いていたら、そのときは頑張っているので見守ってあげてください
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-blue' src='images/members/people_image/blue-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												なかじ
+											</div>
+											<div class='english_name'>
+												NAKAJI
+											</div>
+										</div>
+										<div class='position'>
+											Tp. II
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/trumpet.png">
+									金管楽器といえばトランペット！！知ってる人も多いハズ！その小さな楽器に秘められた音楽という名の大きな力を皆様に届けられるよう日々頑張っています。僕たちの音楽を聴きながらゆっくりしていってね！
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class='modal_window_innercontainer' id='window-3'>
+					<img src='images/members/instruments_image/trombone.jpg' class='modal_window_image'>
+					<h2 class='instrument_name'>Trombone</h2>
+					<div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-blue' src='images/members/people_image/blue-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												まっさん
+											</div>
+											<div class='english_name'>
+												MASSAN
+											</div>
+										</div>
+										<div class='position'>
+											Trb. I
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" style='max-height: 100%' src="images/members/clipart/trombone.png">
+									「運命やるの？トロンボーンは？」というレベルの楽譜の少なさ。4楽章しかありません。<br />
+									でも、そこがトロンボーンの醍醐味。トロンボーンが、演奏が4楽章に入った時の金管の輝きと厚みを別格にするのです。<br />
+									レア物のアルトトロンボーンまで用意して4楽章の合奏を待ち望む日々であります。
+								</div>
+							</div>
+						</div>
+						<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												さくら
+											</div>
+											<div class='english_name'>
+												SAKURA
+											</div>
+										</div>
+										<div class='position'>
+											Trb. II
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+								<img class="comment_box_instrument_image" src="images/members/clipart/trombone.png">
+								華々しい高音から堂々たる低音まで、全てを吹きこなせるのがこの楽器！例えメロディでなくとも、曲の中で重要なポジションを担っているのは間違いなし！左手がつろうと、右手が変形しようと、素晴らしい楽器であることに変わりはありません☺️
+							</div>
+						</div>
+					</div>
+			    </div>
+		    	<div class='modal_window_innercontainer' id='window-4'>
+					<img src='images/members/instruments_image/flute.jpg' class='modal_window_image'>
+					<h2 class='instrument_name'>Flute</h2>
+					<div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												かっぴぃ！！！
+											</div>
+											<div class='english_name'>
+												KAPPI!!!
+											</div>
+										</div>
+										<div class='position'>
+											Fl. I
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" style='max-height: 100%' src="images/members/clipart/flute.png">
+									「あれ...？さっきまで荒れ狂い自撮り狂っていた、女子高生か男子小学生か分からない子がフルート...？しかもめっちゃうまい...」<br />
+									オケ部1番のギャップ人、かえちゃん。強豪校出身で、持ち前の音感と技術でどんな曲も吹きこなす。それではお聴き下さい、フルートを誰よりも愛し、フルートからも愛されたJKの感動の実話、今年度オケデミー賞受賞「うち、ギリ追試じゃないからね」<br />
+									(文章: Per. めい)
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												はるな
+											</div>
+											<div class='english_name'>
+												HARUNA
+											</div>
+										</div>
+										<div class='position'>
+											Fl. I
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" style='max-height: 100%' src="images/members/clipart/flute.png">
+									彼女のフルートとの出会いは中１のとき。それ以来一途にフルートを続けてきました。いつもえらく楽しそうに吹いています。フルートへの愛は誰にも負けません。(その割にはよく楽器を壊しているのを見ますね)<br />
+									体全体を使って表現する彼女の音はとても綺麗でまるで小鳥のさえずりのよう。鳥みたいにうるさい子という意味ではありません。お淑やかな女の子です。<br />
+									存分に櫻井さんのフルートに恋しちゃってください！！<br />
+									(文章: Per. りこ)
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class='modal_window_innercontainer' id='window-5'>
+					<img src='images/members/instruments_image/oboe.jpg' class='modal_window_image'>
+					<h2 class='instrument_name'>Oboe</h2>
+					<div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-blue' src='images/members/people_image/blue-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												ちゃろ
+											</div>
+											<div class='english_name'>
+												CHARO
+											</div>
+										</div>
+										<div class='position'>
+											Ob. I
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" style='max-height: 100%' src="images/members/clipart/oboe.png">
+									みんなが彼と自撮りたい！オケ部のアイドル兼指揮者です！毎日部活に来て、オケ部のために一生懸命仕事をしてくれます。<br />
+									チャームポイントは何と言っても裏表のないあの笑顔！あだ名は『ちゃろ』。その名の通り可愛い奴です。誰に対しても分け隔てなく優しく接してくれます！ほんと神♡おーっと、これ以上言うとちゃろくん照れちゃうかな〜♡♡<br />
+									ところで、ちゃろはオーボエが神うまいです（初めて事実を述べたかも）まぁ、滅多にオーボエ吹くちゃろはお目にかかれません。なぜかって？それは部活に…
+									(文章: Fg. ももや)
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												ゆまこ
+											</div>
+											<div class='english_name'>
+												YUMAKO
+											</div>
+										</div>
+										<div class='position'>
+											Ob. II
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" style='max-height: 100%' src="images/members/clipart/oboe.png">
+									オーボエを吹きこなすスーパー1年生！部活に対してと学校の課題に対してのやる気の差があり過ぎる面白い子です。<br />
+									パートの先輩のことを「優しくて欠点がない」なんて言えちゃうくらい心が優しい！ほんとに？言っちゃってもいいんだよ？って私が聞き返したって、決して先輩の愚痴はいいません。笑顔に騙されてるよ！！！！<br />
+									そんな彼女はなんと〜！入部1年目にして辛夷祭ではトップを務めます。なんてったって音が綺麗！毎日自主練に来てる努力家なんです。運命のソロは必聴ですよ、お楽しみに♡♡♡
+									(文章: Fg. ももや)
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class='modal_window_innercontainer' id='window-6'>
+					<img src='images/members/instruments_image/clarinet.jpg' class='modal_window_image'>
+					<h2 class='instrument_name'>Clarinet</h2>
+					<div>
+						<div class='outer_comment_box'>
+						親愛なるクラリネットへ<br />
+						<br />
+						みんなを虜にするそのシックな見た目も優しい音。<br />
+						見た目は厳しそうなのに、こんなにも優しいなんて。<br />
+						真剣なところ、甘く優しい何もかもを包み込むような音色、みんなを引っ張ってくれるような力強さ。<br />
+						どれも魅力的で目が離せなくなる。<br />
+						<br />
+						他にも華やかな楽器はあるけれど、もう君しか愛せない。<br />
+						<br />
+						君が世界一カッコいいよ。
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+								<img class='people-image-blue' src='images/members/people_image/blue-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												びしょう
+											</div>
+											<div class='english_name'>
+												BISHO
+											</div>
+										</div>
+										<div class='position'>
+											Cl. I
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/clarinet.png">
+									クラリネットがよく似合う素敵すぎる先輩は、頭が良くて、スタイル良くて、いつも笑顔で、みんなに優しくて、そのうえ運動神経も抜群！わからないところはなんでも優しく教えてくれて…長所をあげ始めたらきりがない！みんなの憧れ！！スペック高すぎるオケ部１のパーフェクトボーイ…だと私は思ってます！！んんん？？？彼女持ちですか！？残念だなぁ…って！部内ですか！？まぶしすぎる…<br />
+									(文章: Cl. すずこ)<br />
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												すずこ
+											</div>
+											<div class='english_name'>
+												SUZUKO
+											</div>
+										</div>
+										<div class='position'>
+											Cl. II
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/clarinet.png">
+									クラリネットかっこいい！！<br />
+									クラリネットへの愛なら誰にも負けない！<br />
+									そんな元気でハツラツな後輩ちゃんですが、本人曰く「最近自分のキャラの崩壊を感じる」とのこと…。<br />
+									小学校からクラリネットを始めた彼女、その時の癖が抜けず間違えると手を上げるのですが、吹いてるこっちはその姿がどうしても面白く見えてこっちまで吹けなくなる始末(笑)<br />
+									(文章: Cl. びしょう)
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <!--ファゴットのページここから==============================================-->
+		    	<div class='modal_window_innercontainer' id='window-7'>
+		    		<img src='images/members/instruments_image/basoon.jpg' class='modal_window_image'>
+					<h2 class='instrument_name'>Basoon</h2>
+					<div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+								<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												ももや
+											</div>
+											<div class='english_name'>
+												MOMOYA
+											</div>
+										</div>
+										<div class='position'>
+											Fg. I
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/basoon.png">
+									運指ニモマケズ<br />
+									重サニモマケズ<br />
+									知名度ノ低サニモ部員ノ煽リニモマケヌ<br />
+									丈夫ナココロヲモチ<br />
+									ソロハナク（※あります）<br />
+									決シテサボラズ<br />
+									イツモ健気ニ練習シテヰル<br />
+									一日二ロングトーント<br />
+									音階トタンギングト少シノ曲練ヲシ<br />
+									アラユル分奏デ<br />
+									自分ハカンジョウニイレラレズ<br />
+									ヨクミキキサレタトコロデ<br />
+									結局ワスレラレル<br />
+									附高ノ別館ノ三階ノ奥ノ<br />
+									小サナ楽器庫ニヰテ
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-blue' src='images/members/people_image/blue-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												佐伯くん
+											</div>
+											<div class='english_name'>
+												SAEKI
+											</div>
+										</div>
+										<div class='position'>
+											Fg. II
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/basoon.png">
+									左デクラリネットガ吹ケバ<br />
+									ソノ音域ノ広サヲ望ミ<br />
+									後ロノトロンボーンニ突カレレバ<br />
+									音量ガ出ルノヲ羨マシガリ<br />
+									右デフルートガ吹ケバ<br />
+									ソノメロディ私モ欲シイトイイ<br />
+									  <br />
+									不可能ダカラヤメロトイイ<br />
+									リードガカビレバナミダヲナガシ<br />
+									楽器ヲ壊セバオロオロアルキ<br />
+									ミンナニトッポトイワレ<br />
+									褒メラレモセズ<br />
+									見向キモサレズ<br />
+									サウイフファゴット吹キニ<br />
+									僕ラハナリタイ
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <!--ファゴットのページここまで==============================================-->
+			    <!--バイオリンのページここから==============================================-->
+			    <div class='modal_window_innercontainer' id='window-8'>
+					<img src='images/members/instruments_image/violin.jpg' class='modal_window_image'>
+					<h2 class='instrument_name'>Violin</h2>
+					<div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+								<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name special'>
+												しょんしょん
+											</div>
+											<div class='english_name'>
+												SYONSYON
+											</div>
+										</div>
+										<div class='position'>
+											1 Vn.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/violin.png">
+									初の交響曲ファーストヴァイオリン、そして更に初のコンミス、ハイポジションに次ぐハイポジションに楽譜を貰った最初はびびってましたが、段々ストバイの良さというものも感じてきました。どんな曲でも、キリっとした音と、柔らかい音を使い分けながらお届けします。是非是非いらしてください！
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												あんな
+											</div>
+											<div class='english_name'>
+												ANNA
+											</div>
+										</div>
+										<div class='position'>
+											2 Vn.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/violin.png">
+									抜群の音楽センスを持つのにそれを生かさない、オケ部にとって敵なんだかなんなのかよく分かんない不思議ちゃん。だけど実はオケのことすごく良く考えてたり！<br />
+									彼女が「バイオリン大好き♡」なんて言ってるのを聞いたことがありませんが、他の楽器を馬鹿にしちゃうあたり、本当はバイオリン愛に溢れてるんでしょうね！自分の楽器が1番偉いと思ってる感じが気にくわないな！！！<br />
+									毒舌家なのに優しさに溢れてる、やればできるのに脱力系、そんなオケ部１扱いづらい彼女の本性はただのキチガイ…近づくべからず。<br />
+									(文章: Fg. ももや)
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												かのん
+											</div>
+											<div class='english_name'>
+												KANON
+											</div>
+										</div>
+										<div class='position'>
+											1 Vn.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/violin.png">
+									実はこの「運命」、幼稚園の時TDLで弾かせてもらったのです。あの頃はエレクトーン、そして今はヴァイオリン、また再会できるとはまさに「運命」。ピアノとギターは長らくお付き合いしてるけどヴァイオリンは初めての挑戦。最近の悩みはチューニングをギター感覚でおこなってしまうため、大幅に音がずれることです。先輩のありがたいお言葉をこころに受けつつ当日頑張ります♩♬
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												ゆか
+											</div>
+											<div class='english_name'>
+												YUKA
+											</div>
+										</div>
+										<div class='position'>
+											1 Vn.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/violin.png">
+									オーケストラ部に憧れて入ってから毎日が楽しくて、電車でも授業中でも夢の中でもバイオリンのことで頭がいっぱいです。まさかあの有名なベートーベンの代表作を弾くことになるとは……<br />
+									勉強よりも、練習してます。左手の指の痺れが今も治りません。一生に一度の高校生活の運命をバイオリンに捧げます。。。
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												まこ
+											</div>
+											<div class='english_name'>
+												MAKO
+											</div>
+										</div>
+										<div class='position'>
+											2 Vn.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/violin.png">
+									バイオリンかわいい♡かっこいい♡楽しそう♡と"運命"を感じて入ったもののあまりの難しさに驚く毎日です。。もちろんバイオリンの素晴らしさ楽しさにも驚いています(  °-°  )まだバイオリンを始めて3ヶ月ほどですが、先輩方に少しでも近づけるように一日中バイオリンのことばっか考えています!!常にバイオリンのことしか考えていない個性的(JKなのにマイケルジャクソン愛やばい人とか個性的な趣味ある人とか…笑)な1年生同士精一杯がんばるのでぜひいらしてください!!<br />
+									"運命"を感じて"運命"を弾く私たちが最高の演奏をお届けします！
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												りんこ
+											</div>
+											<div class='english_name'>
+												RINKO
+											</div>
+										</div>
+										<div class='position'>
+											2 Vn.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/violin.png">
+									中学の部活はサッカー、受験期の支えとなったのはバスケ、とスポーツを愛していて、ピアノすら習ったことがなかった楽器初心者の私が、なぜかこのオーケストラ部に入り、バイオリンを始めました。その理由を説明すると長いのですが、それが私の「運命」だったのだと考えています。人一倍習得が遅く、まだまだ不協和音が生じることがたくさんありますが、愛しのバイオリンと共に日々成長していけるよう頑張ります!!
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												みなっち
+											</div>
+											<div class='english_name'>
+												MINACCHI
+											</div>
+										</div>
+										<div class='position'>
+											2 Vn.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/violin.png">
+									80歳のおじいさんよりも酷いと言われ続けている私の肩。それなのに首を傾けながら演奏せざるをえないというヴァイオリンを選んだのは「運命」を感じたからー。壊れた人形のように首を延々廻しながら授業聞いてる人、それワ・タ・シ(=´∀｀)人(´∀｀=)<br />
+									ヴァイオリンだけでなくピアノも金管も演奏するの大好きな、純粋な音楽愛者です！音楽の素晴らしさを届けたい！<br />
+									会場で待ってますo(｀ω´ )o
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class='modal_window_innercontainer' id='window-9'>
+			    	<img src='images/members/instruments_image/viola.jpg' class='modal_window_image'>
+					<h2 class='instrument_name'>Viola</h2>
+					<div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+								<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												さゆり
+											</div>
+											<div class='english_name'>
+												Sayuri
+											</div>
+										</div>
+										<div class='position'>
+											Vla.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/viola.png">
+									彼女の名前は松波小百合。今年Miss辛夷3傑入りした彼女はオーケストラ部のアイドル、通称“さゆり姫”である。実は彼女、現在部活と塾、ピアノ、ヴィオラのレッスン、バレエを両立させているという文武両道の極みである。ちなみに最近めがねを変えた結果、キュートなルックスに加え「知的な感じ」も備わった。そんな彼女の唯一の残念ポイントはラブライバーであることだったが、近頃はやっていないらしく、これはそろそろ春が訪れるのではないかと部員一同期待している。「Missの応援絶対来いよ！」
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												よしみ
+											</div>
+											<div class='english_name'>
+												YOSHIMI
+											</div>
+										</div>
+										<div class='position'>
+											Vla.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/viola.png">
+									彼女の名前は今川佳美。身長145cmの中低セクションには欠かせない癒し的存在。中学では吹奏楽部でサックスを吹いており現在はヴィオラを担当している。部活内では「保育園」や「幼稚園」というネタでいじられることが多いが最近眼鏡からコンタクトへ移行した彼女の可愛さには誰もがつい頭を撫でたくなるほどである。しかし意外にもその可愛さとは裏腹に鋭利な言葉で皆をびっくりさせることもある。（笑）そんな彼女が最後に言いたいこと「まだまだ伸びるから！！」
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-blue' src='images/members/people_image/blue-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												ひかる
+											</div>
+											<div class='english_name'>
+												HIKARU
+											</div>
+										</div>
+										<div class='position'>
+											Vla.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/viola.png">
+									今までバイオリンを長く続けてきたのに…なぜか始めたビオラ。大きさの違いに混乱しつつも日々邁進してる（多分）。自分の唯一の特技を伸ばそうと入ったオーケストラ部だが、練習嫌いの性格相変わらず…。とりあえずビブラートぐらいは完璧にできるようにしたいな〜。いつも通りの軽いノリでどこまでやりきれるのか自分でもわからない。そんなわけで最後に、「俺提督じゃないよ！！」
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class='modal_window_innercontainer' id='window-10'>
+			    	<img src='images/members/instruments_image/cello.jpg' class='modal_window_image'>
+					<h2 class='instrument_name'>Cello</h2>
+					<div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												ひなみ
+											</div>
+											<div class='english_name'>
+												HINAMI
+											</div>
+										</div>
+										<div class='position'>
+											Vc.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/viola.png">
+									おいおいそこのおにいさん、チェロ様を前にして頭が高いぞぉ・・・なにせそこらの五月蝿いおこちゃまな楽器とは格が違うからな・・・チェロの世界に入るだけで大人の階段どぴゅーんさ・・・チェロはいいぞぉ・・・深いぞぉ・・・まあ聴いてきなって・・・泣けるからさぁ・・・
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-red' src='images/members/people_image/red-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												まな
+											</div>
+											<div class='english_name'>
+												MANA
+											</div>
+										</div>
+										<div class='position'>
+											Vc.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/viola.png">
+									チェロの音色に魅せられてオケ部に入ってから、リアルに充実した高校生活を送っています♡初心者なのでわからないことが多いですが、一年間でどれだけ弾けるようになるか試してみたいです。高校生活の運命をチェロに捧げます…
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class='modal_window_innercontainer' id='window-11'>
+				    <img src='images/members/instruments_image/contrabass.jpg' class='modal_window_image'>
+					<h2 class='instrument_name'>Contrabass</h2>
+					<div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-blue' src='images/members/people_image/blue-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												たいちろー
+											</div>
+											<div class='english_name'>
+												TAICHIRO
+											</div>
+										</div>
+										<div class='position'>
+											Cb.
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" style='max-height: 100%' src="images/members/clipart/contrabass.png">
+									小学生の頃にコントラバスを触って以来、僕は楽器といえばコントラバス以外に触れたことがありません。一筋です、浮気はしてません(中学時代は倦怠期でしたが)。ヴァイオリンの仲間が横でドヤ顔しながらかっこいい旋律を弾いていても動じません、コントラバスにはメロディはないけどしっかり役割があるんです！<br />
+									べ、別に羨ましくなんかないんだからね///
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class='modal_window_innercontainer' id='window-12'>
+					<h2 class='instrument_name'>Conductor</h2>
+					<div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+									<img class='people-image-blue' src='images/members/people_image/blue-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												ちゃろ
+											</div>
+											<div class='english_name'>
+												CHARO
+											</div>
+										</div>
+										<div class='position'>
+											Ob. I
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" style='max-height: 100%' src="images/members/clipart/conductor.png">
+									みんなが彼と自撮りたい！オケ部のアイドル兼指揮者です！毎日部活に来て、オケ部のために一生懸命仕事をしてくれます。<br />
+									チャームポイントは何と言っても裏表のないあの笑顔！あだ名は『ちゃろ』。その名の通り可愛い奴です。誰に対しても分け隔てなく優しく接してくれます！ほんと神♡おーっと、これ以上言うとちゃろくん照れちゃうかな〜♡♡<br />
+									ところで、ちゃろはオーボエが神うまいです（初めて事実を述べたかも）まぁ、滅多にオーボエ吹くちゃろはお目にかかれません。なぜかって？それは部活に…
+									(文章: Fg. ももや)
+								</div>
+							</div>
+						</div>
+						<div class='comment_box'>
+							<div class='comments'>
+								<div class='people'>
+								<img class='people-image-blue' src='images/members/people_image/blue-logo.jpg'>
+									<div class='names'>
+										<div class='inner_names'>
+											<div class='japanese_name'>
+												びしょう
+											</div>
+											<div class='english_name'>
+												BISHO
+											</div>
+										</div>
+										<div class='position'>
+											Cl. I
+										</div>
+									</div>
+								</div>
+								<div class='actual_comment'>
+									<img class="comment_box_instrument_image" src="images/members/clipart/conductor.png">
+									クラリネットがよく似合う素敵すぎる先輩は、頭が良くて、スタイル良くて、いつも笑顔で、みんなに優しくて、そのうえ運動神経も抜群！わからないところはなんでも優しく教えてくれて…長所をあげ始めたらきりがない！みんなの憧れ！！スペック高すぎるオケ部１のパーフェクトボーイ…だと私は思ってます！！んんん？？？彼女持ちですか！？残念だなぁ…って！部内ですか！？まぶしすぎる…<br />
+									(文章: Cl. すずこ)<br />
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+		    </div>
+		</div>
+	</body>
+</html>

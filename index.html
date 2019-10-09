@@ -1,0 +1,137 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Gakudai Orchestraは、東京学芸大学附属高等学校でオーケストラ部として活動しています。部員は経験者だけでなく高校から始めた初心者も多くおり、みんな日々楽しく練習に取り組んでいます。" />
+		<link rel="shortcut icon" href="images/other/favicon.ico" />
+		<title>Gakudai Orchestra / 東京学芸大学附属高校オーケストラ部</title>
+		<!--Javascript-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src='codes/slide_menu_script.js'></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-43913032-8', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<!--CSS-->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="codes/style.css" media="screen, projection, print">
+		<link rel="stylesheet" href="codes/header.css" media="screen, projection, print">
+		<style>
+		/*Main Contents*/
+		html{
+			height: 100%;
+		}
+		body{
+			background: url(images/about/background.jpeg) repeat;
+			background-repeat: repeat;
+		}
+		#main-contents-container{
+			height: 100%;
+		}
+		#home-main-container{
+			
+		}
+		#footer{
+			position: relative;
+			background-color: rgba(255, 255, 255, 0.7);
+			width: 100%;
+		}
+		#home-contents{
+			width: 80%;
+			margin: auto;
+			padding-top: 70px;
+			padding-bottom: 20px;
+			margin-bottom: 40px;
+		}
+		#home-logo-big{
+			display: block;
+			width: 350px;
+			margin: auto;
+		}
+		#home-main-contents{
+			width: 100%;
+			background-image: url("images/home/background.jpg");
+			background-repeat: no-repeat;
+			background-position: center top 0px;
+			background-size:cover;
+		}
+		.advertisement{
+			position: relative;
+			width: 80%;
+			margin: auto;
+			padding-bottom: 40px;
+		}
+		.advertisement img{
+			display: block;
+			width: 50%;
+			max-width: 400px;
+			margin: auto;
+			box-shadow: 0px 0px 20px #888888;
+		}
+		@media screen and (max-width: 670px){
+			.advertisement img{
+				width: 100%;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<div id='outmost' class='full-width'>
+			<div id='header-outercontainer' class='full-width'>
+				<img src='images/header/header-logo-text.png' id='header-logo-image' class='vertically-aligned' />
+				<div class='header-links-container'>
+					<div class='header-links  header-selected'>
+						<p class='vertically-aligned'><a href="index.html">ホーム</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a target="_blank" href="https://twitter.com/Gakudai_Orch">お知らせ</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a href="info.html">インフォ</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a href="members.html">メンバー</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a href="about.html">オケについて</a></p>
+					</div>
+				</div>
+				<a id='open_button'><i class="fa fa-bars"></i></a>
+			</div>
+			<div id='main-contents-container'>
+				<nav id="slide_menu">
+					<a id='menu_close_button'><span>×</span></a>
+					
+			        <ul>
+			            <li><a href="index.html"><i class="fa fa-home slide-icon"></i>　ホーム</a></li>
+			            <li><a target="_blank" href="https://twitter.com/Gakudai_Orch"><i class="fa fa-twitter slide-icon"></i>　お知らせ</a></li>
+						<li><a href="info.html"><i class="fa fa-info-circle slide-icon"></i>　インフォ</a></li>
+			            <li><a href="members.html"><i class="fa fa-user slide-icon"></i>　メンバー</a></li>
+			            <li><a href="about.html"><i class="fa fa-music slide-icon"></i>　オケについて</a></li>
+			        </ul>
+			    </nav>
+				<div id='home-main-container'>
+					<div id='home-main-contents'>
+						<div id='footer' class='full-width'>
+							<div id='home-contents'>
+								<p>学大オーケストラは、東京学芸大学附属高等学校で、オーケストラ部として活動しています。部員は経験者だけでなく、高校から始めた初心者も多くおり、みんな日々楽しく練習に取り組んでいます。文化祭の辛夷祭、式典、東京都高等学校文化連盟の大会などで演奏しています。春に定期演奏会を開催します。</p>
+							</div>
+						</div>
+						<div class='advertisement'>
+							<img src="images/home/poster.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

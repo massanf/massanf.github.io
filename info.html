@@ -1,0 +1,569 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/other/favicon.ico" />
+		<title>インフォ｜Gakudai Orchestra</title>
+		<!--Javascript-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src='codes/slide_menu_script.js'></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-43913032-8', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<!--CSS-->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="codes/style.css" media="screen, projection, print">
+		<link rel="stylesheet" href="codes/header.css" media="screen, projection, print">
+		<style>
+		body{
+			background: url(images/about/background.jpeg) repeat;
+			background-repeat: repeat;
+		}
+		/*Main Contents*/
+		#main-contents-container{
+			display: inline-block;
+			background-image: url("images/about/background.jpeg");
+			width: 100%;
+			margin: auto;
+			-moz-transition:3s ease-in;
+			-webkit-transition:3s ease-in;
+			-o-transition:3s ease-in;
+			-ms-transition:3s ease-in;
+		}
+		#head-image{
+			width: 100%;
+			border-bottom: 1px solid #ccc;
+		}
+		#main-contents-inner-container{
+			width: 70%;
+			margin: auto;
+			max-width: 666px;
+		}
+		#scheduleexplanationimages{
+			margin-top: 9%;
+		}
+		#access_list p{
+			font-size: 15px;
+		}
+		.explanationimages{
+			display: inline-block;
+			position: relative;
+			width: 45%;
+			padding: 0;
+		}
+		.explanationright{
+			width: 55%;
+			float: right;
+			font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+  			font-weight: 400;
+		}
+		.explanationwide{
+			display: block;
+			width: 100%;
+			float: left;
+			font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+			font-weight: 400;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+		.explanationwide .contentbox{
+			width: 80%;
+			margin:auto;
+			margin-top: 20px;
+		}
+		/* MUSIC BOX*/
+		.musicbox{
+			width: 100%;
+			margin: auto;
+			background-color: #fff;
+			padding: 10px;
+			box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+			margin-bottom: 20px;
+		}
+		.piece_name{
+			height: 100px;
+		}
+		.music-note{
+			width: 30px;
+			display: block;
+			display: block;
+			float: left;
+			margin-top: 5.5%;
+			margin-left: 30px;
+		}
+		.name_inside{
+			width: 85%;
+			padding: 0;
+			height: 100px;
+			float: right;
+			border-radius: 2px;
+		}
+		.composer{
+			font-size: 15px;
+			display: block;
+			font-weight: bold;
+			line-height:90%;
+		}
+		.musicbox .music_explanation{
+			padding: 15px;
+			padding-top: 0;
+		}
+		.explanationwide .contentbox p{
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		.music-information{
+			display: block;
+			width: 50%;
+			padding: 0;
+			margin: 15px;
+			margin-top: 0px;
+		}
+		.music-information a{
+			color: #0000EE;
+		}
+		.music-information a {
+		    display: inline-block;
+		    position: relative;
+		    padding-left: 6px;
+		    /* Font styles */
+		    text-decoration: none;
+		    color: #6AB3EC;
+		    text-shadow: 0 1px 1px rgba(255,255,255,0.9);
+		}
+
+		.music-information a:hover {
+		    color: #3C9CE7;
+		}
+
+		.music-information a:before {
+		    content: "\25BA";
+		    font-size: 80%;
+		    display: inline-block;
+		    padding-right: 3px;
+		    pointer-events: none;
+		}
+
+		.music-information a:hover:before {
+		    color: #F2BF97;
+		}
+		/* OTHER STUFF*/
+		.explanationleft{
+			width: 55%;
+			float: left;
+			font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+			font-weight: 400;
+			margin-top: 40px;
+		}
+		.explanationtitle{
+			display: block;
+			width: 90%;
+			margin: auto;
+			margin-top: 10px;
+			padding-left: 10px;
+			padding-bottom: 5px;
+			border-bottom: 2px dotted #7f5100;
+		}
+		.explanationtitle h2{
+			font-weight: 600;
+			display: inline-block;
+			width: 50%;
+			font-size: 20px;
+			color: #2a1b00;
+		}
+		.explanationtitle span{
+			display: block;
+			text-align: right;
+			font-weight: 400;
+			width: 40%;
+			margin-right: 5px;
+			font-size: 15px;
+			float: right;
+			margin-top: 7px;
+			color: #a1a1a1;
+		}
+		.explanationtitle span{
+			display: block;
+			text-align: right;
+			font-weight: 400;
+			width: 40%;
+			margin-right: 5px;
+			font-size: 15px;
+			float: right;
+			margin-top: 7px;
+			color: #a1a1a1;
+		}
+		.explanationtitle span{
+			display: block;
+			text-align: right;
+			font-weight: 400;
+			width: 40%;
+			margin-right: 5px;
+			font-size: 15px;
+			float: right;
+			margin-top: 7px;
+			color: #a1a1a1;
+		}
+		.explanationright p{
+			display: block;
+			width: 90%;
+			margin: auto;
+			margin-top: 10px;
+			font-size: 13px;
+			line-height: 170%;
+			color: #222;
+		}
+		.explanationwide p{
+			display: block;
+			width: 90%;
+			margin-top: 10px;
+			margin-bottom: 15px;
+			font-size: 13px;
+			line-height: 170%;
+			color: #222;
+		}
+		.explanationwide ul{
+			width: 90%;
+			margin: auto;
+			margin-top: 20px;
+			margin-left: 10%;
+		}
+		.explanationwide ul li{
+			text-decoration: bold;
+			line-height: 1.8em;
+		}
+		.explanationwide p{
+			margin-left: 5px;
+		}
+		.explanationbox{
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+		}
+		.explanationimagebig{
+			width: 100%;
+		}
+		.explanationimagesmallleft{
+			width: 48%;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+		.explanationimagesmallright{
+			width: 48%;
+			margin-top: 15px;
+			float: right;
+		}
+		.monthname{
+			background-color: #FFF;
+			color: #000;
+			border: 1px solid;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			margin-top: 20px;
+			border-radius: 2px;
+		}
+		.monthname::before{
+			height: 5px;
+			width: 30px;
+			content:"";
+			position: absolute;
+			margin-left: -11px;
+			background-color:#F00;
+		}
+		.monthnamelong::before{
+			margin-left: -8px;
+		}
+		.monthline{
+			text-align: center;
+		}
+		.train-logo{
+			width: 21px;
+			height: 21px;
+			margin: 5px;
+			top: -50%;
+		}
+		.tokyu-logo{
+			width: 25px;
+			height: 20px;
+			margin: 5px;
+			margin-bottom: -5px;
+		}
+		.schedule{
+			display: block;
+			margin: auto;
+			margin-left: 50px;
+			margin-top: 15px;
+			font-size: 13px;
+		}
+		.schedule td:nth-child(2){
+			padding-left: 10px;
+		}
+		.schedule{
+			display: block;
+			margin: auto;
+			margin-left: 50px;
+			margin-top: 15px;
+			font-size: 13px;
+		}
+		.schedule td:nth-child(2){
+			padding-left: 10px;
+		}
+		.access-train{
+			font-size: 15px;
+		}
+		.access-train td{
+			font-size: 15px;
+		}
+		.access-train tr{
+			width: 80%;
+		}
+		.time-from-station{
+			display: inline-block;
+		}
+		.access-bus{
+			table-layout: auto;
+			border-collapse: collapse;
+			margin-left: 60px;
+			margin-top: 5px;
+		}
+		@media screen and (max-width: 900px){
+			#head-image{
+				padding-top: 50px;
+			}
+			#main-contents-inner-container{
+				width: 95%;
+			}
+			.explanationright{
+				width: 100%;
+				font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+				font-weight: 400;
+				margin-top: 20px;
+			}
+			.explanationright span{
+				display: block;
+				text-align: right;
+				font-weight: 400;
+				width: 40%;
+				margin-right: 5px;
+				font-size: 15px;
+				float: right;
+				margin-top: 7px;
+				color: #a1a1a1;
+			}
+			.explanationright p{
+				display: block;
+				width: 90%;
+				margin: auto;
+				margin-top: 10px;
+				margin-bottom: 15px;
+				font-size: 13px;
+				line-height: 170%;
+				color: #222;
+			}
+			.explanationleft{
+				width: 100%;
+				font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+				font-weight: 400;
+				margin-top: 20px;
+			}
+			.explanationleft span{
+				display: block;
+				text-align: right;
+				font-weight: 400;
+				width: 40%;
+				margin-right: 5px;
+				font-size: 15px;
+				float: right;
+				margin-top: 7px;
+				color: #a1a1a1;
+			}
+			.explanationleft p{
+				display: block;
+				width: 90%;
+				margin: auto;
+				margin-top: 10px;
+				margin-bottom: 15px;
+				font-size: 13px;
+				line-height: 170%;
+				color: #222;
+			}
+			.explanationimagesmallleft{
+				display: none;
+			}
+			.explanationimagesmallright{
+				display: none;
+			}
+			.explanationimages{
+				display: block;
+				width: 65%;
+				margin: auto;
+			}
+			.explanationbox{
+				margin-top: 0px;
+				margin-bottom: 50px;
+			}
+			.name_inside{
+				width: 80%;
+			}
+			.music-note{
+				margin-left: 15px;
+				margin-top: 30px;
+			}
+			.explanationwide .contentbox p{
+				font-size: 15px;
+				margin-top: 20px;
+			}
+			.composer{
+				font-size: 13px;
+				margin-top: 5px;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<div id='outmost' class='full-width'>
+			<div id='header-outercontainer' class='full-width'>
+				<img src='images/header/header-logo-text.png' id='header-logo-image' class='vertically-aligned' />
+				<div class='header-links-container'>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a href="index.html">ホーム</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a target="_blank" href="https://twitter.com/Gakudai_Orch">お知らせ</a></p>
+					</div>
+					<div class='header-links  header-selected'>
+						<p class='vertically-aligned'><a href="info.html">インフォ</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a href="members.html">メンバー</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a href="about.html">オケについて</a></p>
+					</div>
+				</div>
+				<a id='open_button'><i class="fa fa-bars"></i></a>
+			</div>
+			<div id='main-contents-container'>
+				<nav id="slide_menu">
+					<a id='menu_close_button'><span>×</span></a>
+					
+			        <ul>
+			            <li><a href="index.html"><i class="fa fa-home slide-icon"></i>　ホーム</a></li>
+			            <li><a target="_blank" href="https://twitter.com/Gakudai_Orch"><i class="fa fa-twitter slide-icon"></i>　お知らせ</a></li>
+						<li><a href="info.html"><i class="fa fa-info-circle slide-icon"></i>　インフォ</a></li>
+			            <li><a href="members.html"><i class="fa fa-user slide-icon"></i>　メンバー</a></li>
+			            <li><a href="about.html"><i class="fa fa-music slide-icon"></i>　オケについて</a></li>
+			        </ul>
+			    </nav>
+				<img src='images/info/head-image.jpg' id='head-image'/>
+				<div id='main-contents-inner-container'>
+					<div class='explanationbox'>
+						<div class='explanationwide'>
+							<div class='explanationtitle'>
+								<h2>練習中の曲目</h2>
+								<span>TUNES</span>
+							</div>
+							<!--曲紹介ここから====================-->
+							<div class='contentbox'>
+								<div class='musicbox'>
+									<div class="piece_name">
+										<img src='images/info/music-note.png' class='music-note'>
+										<div class="name_inside">
+											<p>シェヘラザード (2楽章, 4楽章) <span class='composer'>Nikolai Rimsky-Korsakov</span></p>
+										</div>
+									</div>
+									<div class='music_explanation'>
+										ひょうきんで、でもどこか寂しげな主人公、カレンダー王子。異国情緒たっぷりのこの曲は、シェヘラザードが語る彼の物語を描いている。なにしろオーケストレーションが凝っていてどの楽器も活躍するが、とても難しい曲である。
+									</div>
+									<div class='music-information'>
+											<a target='_blank' href='https://www.youtube.com/watch?v=SQNymNaTr-Y'>音源</a>  <a target='_blank' href='http://imslp.org/wiki/Scheherazade,_Op.35_(Rimsky-Korsakov,_Nikolay)'>楽譜</a>  <a target='_blank' href='https://ja.wikipedia.org/wiki/シェヘラザード_(リムスキー＝コルサコフ)'>ウィキ</a>
+									</div>
+								</div>
+							</div>
+
+							<!--曲紹介ここから====================-->
+							<div class='contentbox'>
+								<div class='musicbox'>
+									<div class="piece_name">
+										<img src='images/info/music-note.png' class='music-note'>
+										<div class="name_inside">
+											<p>ローマの謝肉祭 <span class='composer'>Louis Hector Berlioz</span></p>
+										</div>
+									</div>
+									<div class='music_explanation'>
+										前半のゆったりしたメロディと対照的な、突然始まるカーニバル。すべての楽器が総出となり、どんちゃんお祭り騒ぎを披露する。難曲であるが、まさに学大オケらしい名曲と言えるだろう。
+									</div>
+									<div class='music-information'>
+											<a target='_blank' href='https://www.youtube.com/watch?v=ZfrghHrWGSY'>音源</a>  <a target='_blank' href='images/info/pdf/Roman_Carnival_Overture.pdf'>楽譜</a>  <a target='_blank' href='https://ja.wikipedia.org/wiki/ローマの謝肉祭'>ウィキ</a>
+									</div>
+								</div>
+							</div>
+
+							<!--曲紹介ここから====================-->
+							<div class='contentbox'>
+								<div class='musicbox'>
+									<div class="piece_name">
+										<img src='images/info/music-note.png' class='music-note'>
+											<div class="name_inside">
+											<p>交響曲5番 「運命」<span class='composer'>Ludwig van Beethoven</span></p>
+											</div>
+										</div>
+									<div class='music_explanation'>
+										クラシックの中で最も知名度が高いとも言えるこの交響曲は、冒頭のダダダダーン、という音形が特に有名である。「運命はこのように戸を叩く」という有名なベートーベンの言葉から、「運命」という名がついた。暗く力強い曲調で始まるが、一気に明るくなりフィナーレを迎える。
+									</div>
+									<div class='music-information'>
+											<a target='_blank' href='https://www.youtube.com/watch?v=jv2WJMVPQi8'>音源</a>  <a target='_blank' href='images/info/pdf/beethoven_5.pdf'>楽譜</a>  <a target='_blank' href='https://ja.wikipedia.org/wiki/交響曲第5番_(ベートーヴェン)'>ウィキ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='explanationbox'>
+						<div class='explanationwide'>
+							<div class='explanationtitle'>
+								<h2>演奏</h2>
+								<span>PERFORMANCES</span>
+							</div>
+							<div class='contentbox'>
+								<h3>今年度の演奏予定</h3>
+								<ul>
+									<li>63期入学式</li>
+									<li>新入生歓迎会</li>
+									<li>第62回辛夷祭</li>
+									<li>地区大会</li>
+									<li>中央大会</li>
+									<li>61期卒業式</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class='explanationbox'>
+						<div class='explanationwide'>
+							<div class='explanationtitle'>
+								<h2>歴史</h2>
+								<span>HISTORY</span>
+							</div>
+							<div class='contentbox'>
+								過去の演奏項目は<a target='_blank' href='images/info/pdf/pieces.pdf'>こちら</a>からご覧いただけます。
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

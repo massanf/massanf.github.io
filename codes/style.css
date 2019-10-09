@@ -1,0 +1,145 @@
+/*ALL*/
+*{
+    margin: 0;
+    padding: 0;
+    color: #030201;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-family: "Helvetica Neue";
+    position: relative;
+    left: 0;
+    overflow-x: hidden;
+}
+#outmost{
+    background-color: #FFF;
+    min-width: 100px;
+}
+.full-width{
+    width: 100%;
+}
+.vertically-aligned{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.vertically-aligned-lowered{
+    position: relative;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* ã‚¹ãƒ©ã‚¤ãƒ‰ã‚¤ãƒ³ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«å¿…è¦ãªã¨ã“ã‚ */
+body {
+	position: relative;
+	left: 0;
+	overflow-x: hidden;
+}
+#slide_menu{
+    z-index: 500;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100vh;
+    background-color: rgba(10, 10, 10, 0.9);
+}
+/* ä»¥ä¸‹è£…é£¾ãªã© */
+#slide_menu ul{
+    margin: 0;
+    padding: 0;
+    margin-top: 55px;
+}
+#slide_menu li{
+   border-bottom: solid 1px #3b3b3b; 
+    list-style: none;
+}
+#slide_menu li:first-child{
+    border-top: solid 1px #3b3b3b; 
+    list-style: none;
+}
+#slide_menu li a{
+    display: block;
+    padding: 20px 0;
+    padding-left: 10%;
+    color: #fff;
+    width: 150px;
+    margin: auto;
+    text-align: left;
+    text-decoration: none;
+}
+.slide-icon{
+    font-size: 23px;
+    color: #FFF;
+}
+#open_button{
+    position: fixed;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+#menu_close_button{
+    display: block;
+    width: 95%;
+    cursor: default;
+}
+#menu_close_button span{
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    font-size: 40px;
+    display: block;
+    cursor: pointer;
+    color: #FFF;
+}
+.container{
+    margin: 0 auto;
+    max-width: 750px;
+    overflow: hidden;
+}
+.container h1{
+    padding-left: 90px;
+}
+.content > section{
+	width: 100%;
+	height: auto;
+}
+.content h2{
+    margin: 60px 0 20px;
+    color: #666;
+    font-size: 26px;
+}
+.content p{
+    margin: 0 0 10px;
+    width: 100%;
+    line-height: 1.3;
+}
+.content img{
+    display: block;
+    box-sizing: border-box;
+    margin:0 auto 15px;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border: solid 15px #fff;
+    box-shadow: 0 1px 8px #ccc;
+    
+}
+#sidebar_logo{
+    display: block;
+    width: 150px;
+    margin: auto;
+    bottom: 10px;
+}

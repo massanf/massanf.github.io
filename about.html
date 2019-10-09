@@ -1,0 +1,541 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/other/favicon.ico" />
+		<title>オケについて｜Gakudai Orchestra</title>
+		<!--Javascript-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src='codes/slide_menu_script.js'></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-43913032-8', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<!--CSS-->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="codes/style.css" media="screen, projection, print">
+		<link rel="stylesheet" href="codes/header.css" media="screen, projection, print">
+		<style>
+		/*Main Contents*/
+		body{
+			background: url(images/about/background.jpeg) repeat;
+			background-repeat: repeat;
+		}
+		#main-contents-container{
+			display: inline-block;
+			background-image: url("images/about/background.jpeg");
+			width: 100%;
+			margin: auto;
+			-moz-transition:3s ease-in;
+			-webkit-transition:3s ease-in;
+			-o-transition:3s ease-in;
+			-ms-transition:3s ease-in;
+		}
+		#head-image{
+			width: 100%;
+			border-bottom: 1px solid #ccc;
+		}
+		#main-contents-inner-container{
+			width: 70%;
+			margin: auto;
+			max-width: 666px;
+		}
+		#scheduleexplanationimages{
+			margin-top: 9%;
+		}
+		#access_list{
+			display: block;
+			width: 80%;
+			overflow: scroll;
+			white-space: nowrap;
+			padding: 5px;
+		}
+		#access_list p{
+			font-size: 15px;
+		}
+		.explanationimages{
+			display: inline-block;
+			position: relative;
+			width: 45%;
+			padding: 0;
+		}
+		.explanationright{
+			width: 55%;
+			float: right;
+			font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+  			font-weight: 400;
+		}
+		.explanationwide{
+			display: block;
+			width: 100%;
+			float: left;
+			font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+			font-weight: 400;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+		.explanationleft{
+			width: 55%;
+			float: left;
+			font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+			font-weight: 400;
+			margin-top: 40px;
+		}
+		.explanationtitle{
+			display: block;
+			width: 90%;
+			margin: auto;
+			margin-top: 10px;
+			padding-left: 10px;
+			padding-bottom: 5px;
+			border-bottom: 2px dotted #7f5100;
+		}
+		.explanationtitle h2{
+			font-weight: 600;
+			display: inline-block;
+			width: 50%;
+			font-size: 18px;
+			color: #2a1b00;
+		}
+		.explanationright span{
+			display: block;
+			text-align: right;
+			font-weight: 400;
+			width: 40%;
+			margin-right: 5px;
+			font-size: 15px;
+			float: right;
+			margin-top: 7px;
+			color: #a1a1a1;
+		}
+		.explanationwide span{
+			display: block;
+			text-align: right;
+			font-weight: 400;
+			width: 40%;
+			margin-right: 5px;
+			font-size: 15px;
+			float: right;
+			margin-top: 7px;
+			color: #a1a1a1;
+		}
+		.explanationleft span{
+			display: block;
+			text-align: right;
+			font-weight: 400;
+			width: 40%;
+			margin-right: 5px;
+			font-size: 15px;
+			float: right;
+			margin-top: 7px;
+			color: #a1a1a1;
+		}
+		.explanationright p{
+			display: block;
+			width: 90%;
+			margin: auto;
+			margin-top: 10px;
+			font-size: 13px;
+			line-height: 170%;
+			color: #222;
+		}
+		.explanationwide p{
+			display: block;
+			width: 90%;
+			margin-top: 10px;
+			margin-bottom: 15px;
+			font-size: 13px;
+			line-height: 170%;
+			color: #222;
+		}
+		.explanationwide ul{
+			width: 90%;
+			margin: auto;
+			margin-top: 20px;
+			margin-left: 10%;
+		}
+		.explanationwide ul li{
+			text-decoration: bold;
+		}
+		.explanationwide p{
+			margin-left: 5px;
+		}
+		.explanationbox{
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+		}
+		.explanationimagebig{
+			width: 100%;
+		}
+		.explanationimagesmallleft{
+			width: 48%;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+		.explanationimagesmallright{
+			width: 48%;
+			margin-top: 15px;
+			float: right;
+		}
+		.monthname{
+			background-color: #FFF;
+			color: #000;
+			border: 1px solid;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			margin-top: 20px;
+			border-radius: 2px;
+		}
+		.monthname::before{
+			height: 5px;
+			width: 30px;
+			content:"";
+			position: absolute;
+			margin-left: -11px;
+			background-color:#F00;
+		}
+		.monthnamelong::before{
+			margin-left: -8px;
+		}
+		.monthline{
+			text-align: center;
+		}
+		.train-logo{
+			width: 21px;
+			height: 21px;
+			margin: 5px;
+			top: -50%;
+		}
+		.tokyu-logo{
+			width: 25px;
+			height: 20px;
+			margin: 5px;
+			margin-bottom: -5px;
+		}
+		.schedule{
+			display: block;
+			margin: auto;
+			margin-left: 50px;
+			margin-top: 15px;
+			font-size: 13px;
+		}
+		.schedule td:nth-child(2){
+			padding-left: 10px;
+		}
+		.schedule{
+			display: block;
+			margin: auto;
+			margin-left: 50px;
+			margin-top: 15px;
+			font-size: 13px;
+		}
+		.schedule td:nth-child(2){
+			padding-left: 10px;
+		}
+		.access-train{
+			font-size: 15px;
+		}
+		.access-train td{
+			font-size: 15px;
+			white-space: nowrap;
+		}
+		.access-train tr{
+			width: 80%;
+		}
+		.time-from-station{
+			display: inline-block;
+		}
+		.access-bus{
+			table-layout: auto;
+			border-collapse: collapse;
+			margin-left: 60px;
+			margin-top: 5px;
+		}
+		.access-bus td{
+			white-space: nowrap;
+		}
+		@media screen and (max-width: 900px){
+			#head-image{
+				padding-top: 50px;
+			}
+			#main-contents-inner-container{
+				width: 95%;
+			}
+			.explanationright{
+				width: 100%;
+				font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+				font-weight: 400;
+				margin-top: 20px;
+			}
+			.explanationright span{
+				display: block;
+				text-align: right;
+				font-weight: 400;
+				width: 40%;
+				margin-right: 5px;
+				font-size: 15px;
+				float: right;
+				margin-top: 7px;
+				color: #a1a1a1;
+			}
+			.explanationright p{
+				display: block;
+				width: 90%;
+				margin: auto;
+				margin-top: 10px;
+				margin-bottom: 15px;
+				font-size: 13px;
+				line-height: 170%;
+				color: #222;
+			}
+			.explanationleft{
+				width: 100%;
+				font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+				font-weight: 400;
+				margin-top: 20px;
+			}
+			.explanationleft span{
+				display: block;
+				text-align: right;
+				font-weight: 400;
+				width: 40%;
+				margin-right: 5px;
+				font-size: 15px;
+				float: right;
+				margin-top: 7px;
+				color: #a1a1a1;
+			}
+			.explanationleft p{
+				display: block;
+				width: 90%;
+				margin: auto;
+				margin-top: 10px;
+				margin-bottom: 15px;
+				font-size: 13px;
+				line-height: 170%;
+				color: #222;
+			}
+			.explanationimagehidden{
+				display: none;
+			}
+			.explanationimageshown{
+			}
+			.explanationimages{
+				display: block;
+				width: 65%;
+				margin: auto;
+			}
+			.explanationbox{
+				margin-top: 0px;
+				margin-bottom: 50px;
+			}
+		}
+		@media screen and (max-width: 433px){
+			#access_list{
+				border: 1px solid #ccc;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<div id='outmost' class='full-width'>
+			<div id='header-outercontainer' class='full-width'>
+				<img src='images/header/header-logo-text.png' id='header-logo-image' class='vertically-aligned' />
+				<div class='header-links-container'>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a href="index.html">ホーム</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a target="_blank" href="https://twitter.com/Gakudai_Orch">お知らせ</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a href="info.html">インフォ</a></p>
+					</div>
+					<div class='header-links'>
+						<p class='vertically-aligned'><a href="members.html">メンバー</a></p>
+					</div>
+					<div class='header-links  header-selected'>
+						<p class='vertically-aligned'><a href="about.html">オケについて</a></p>
+					</div>
+				</div>
+				<a id='open_button'><i class="fa fa-bars"></i></a>
+			</div>
+			<div id='main-contents-container'>
+				<nav id="slide_menu">
+					<a id='menu_close_button'><span>×</span></a>
+					
+			        <ul>
+			            <li><a href="index.html"><i class="fa fa-home slide-icon"></i>　ホーム</a></li>
+			            <li><a target="_blank" href="https://twitter.com/Gakudai_Orch"><i class="fa fa-twitter slide-icon"></i>　お知らせ</a></li>
+						<li><a href="info.html"><i class="fa fa-info-circle slide-icon"></i>　インフォ</a></li>
+			            <li><a href="members.html"><i class="fa fa-user slide-icon"></i>　メンバー</a></li>
+			            <li><a href="about.html"><i class="fa fa-music slide-icon"></i>　オケについて</a></li>
+			        </ul>
+			    </nav>
+				<img src='images/about/head-image.jpg' id='head-image'/>
+				<div id='main-contents-inner-container'>
+					<div class='explanationbox'>
+						<div class='explanationimages'>
+							<img src='images/about/explanation-pic-1.PNG' class='explanationimagebig explanationimageshown'/>
+							<img src='images/about/explanation-pic-2.PNG' class='explanationimagesmallleft explanationimagehidden'>
+							<img src='images/about/explanation-pic-3.PNG' class='explanationimagesmallright explanationimagehidden'>
+						</div>
+						<div class='explanationright'>
+							<div class='explanationtitle'>
+								<h2>学大オーケストラ</h2>
+								<span>GAKUDAI ORCH.</span>
+							</div>
+							<p>一昨年度から「音楽部」から「オーケストラ部」へと改名した。3月に行われる定期演奏会、8月の辛夷祭においての公演、11月に昨年は昭和音楽大学で行われた地区音楽大会、1月に東京文化会館で行われる中央音楽大会などで演奏を行っている。ソロコンサートやクリスマスコンサートにおいて、部員同士の交流も活発に行われている。<p>
+							8月には例年合宿を行っている。同校においてはトップクラスの長さである5泊6日という期間、閉鎖された環境下で音楽性を深めるとともに部員内での親睦を図る有意義な1週間となっている。</p>
+							<p>部活外のプライベートでも頻繁に部員同士で遊びに行くほど仲がよく、部活中も和気あいあいとした雰囲気で練習をしている。</p>
+						</div>
+					</div>
+					<div class='explanationbox'>
+						<div class='explanationimages' id='scheduleexplanationimages'>
+							<img src='images/about/explanation-pic-4.PNG' class='explanationimagebig explanationimagehidden'>
+							<img src='images/about/explanation-pic-5.PNG' class='explanationimagesmallleft explanationimageshown'>
+							<img src='images/about/explanation-pic-6.PNG' class='explanationimagesmallright explanationimageshown'>
+						</div>
+						<div class='explanationleft'>
+							<div class='explanationtitle'>
+								<h2>年間予定</h2>
+								<span>SCHEDULE</span>
+							</div>
+							<table class='schedule'>
+								<tr>
+									<td class='monthname'>4</td>
+									<td>・入学式</td>
+								</tr>
+								<tr>
+									<td class='monthline'></td>
+									<td>・新入生歓迎会</td>
+								<tr>
+									<td class='monthname'>5</td>
+									<td>・新入生正式入部</td>
+								</tr>
+								<tr>
+									<td class='monthline'></td>
+									<td>・辛夷祭に向け練習開始</td>
+								</tr>
+								<tr>
+									<td  class='monthname'>8</td>
+									<td>・合宿</td>
+								</tr>
+								<tr>
+									<td class='monthname'>9</td>
+									<td>・辛夷祭</td>
+								</tr>
+								<tr>
+									<td class='monthname monthnamelong'>11</td>
+									<td>・地区音楽会</td>
+								</tr>
+								<tr>
+									<td class='monthname'>1</td>
+									<td>・中央大会</td>
+								</tr>
+								<tr>
+									<td class='monthname'>3</td>
+									<td>・卒業式</td>
+								</tr>
+								<tr>
+									<td class='monthline'></td>
+									<td>・定期演奏会</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class='explanationbox'>
+						<div class='explanationwide'>
+							<div class='explanationtitle'>
+								<h2>活動</h2>
+								<span>ACTIVITY</span>
+							</div>
+							<ul>
+								<li><b>活動日</b></li>
+								<p>月、水、木、金の放課後６時まで、及び、不定期で休日９時～１６時に練習があります。また、朝、昼休み、部活のない放課後にも自主練も可能です。長期休暇中にも練習があり、夏休みには合宿もあります。</p>
+								<li><b>活動場所</b></li>
+								<p>学校の別館３階の、音楽室(弦)、合奏室(金管)、楽器庫(木管)、廊下(打)が主です。</p>
+								<li><b>活動内容</b></li>
+								<p>演奏会に向けて、曲の練習をしています。個人練習、パート練習、セクション練習、分奏、合奏などを行います。たまにOB、OGの方が来てくださいます。</p>
+							</ul>
+						</div>
+					</div>
+					<div class='explanationbox'>
+						<div class='explanationwide'>
+							<div class='explanationtitle'>
+								<h2>アクセス</h2>
+								<span>ACCESS</span>
+							</div>
+							<ul id='access_list'>
+								<li><b>電車</b></li>
+								<table class='access-train'>
+									<tr>
+										<td>
+											<img src='images/about/ty-logo.png' class='train-logo'>
+										</td>
+										<td>
+											東急東横線  <b>学芸大学駅</b>　<div class='time-from-station'>下車 徒歩15分</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img src='images/about/dt-logo.png' class='train-logo'>
+										</td>
+										<td>
+											東急田園都市線  <b>三軒茶屋駅</b>　<div class='time-from-station'>下車 徒歩20分</div>
+										</td>
+									</tr>
+								</table>
+								<li><b>バス</b></li>
+								<img src='images/about/tokyu-logo.png' class='tokyu-logo'>【渋谷駅】南口　
+								<table class='access-bus'>
+									<tr>
+										<td>22番のりば</td>
+										<td>「野沢龍雲寺循環」行き</td>
+									</tr>
+									<tr>
+										<td>23番のりば</td>
+										<td>「東京医療センター」行き</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>「多摩川駅」行き</td>
+									</tr>
+								</table>
+								<br />
+								<img src='images/about/tokyu-logo.png' class='tokyu-logo'>【目黒駅】西口
+								<table class='access-bus'>
+									<tr>
+										<td>2番のりば</td>
+										<td>「三軒茶屋」行き</td>
+									</tr>
+								</table>
+								<br />
+								<img src='images/about/tokyu-logo.png' class='tokyu-logo'>【三軒茶屋駅】
+								<table class='access-bus'>
+									<tr>
+										<td>「目黒駅」行き</td>
+									</tr>
+								</table>
+								<br />
+								※いずれも<b>「学芸大学附属高校」</b>下車</p>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
