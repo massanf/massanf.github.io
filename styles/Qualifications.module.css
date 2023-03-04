@@ -1,0 +1,11 @@
+.block>h3 {
+    font-family: var(--font-mono);
+}
+
+.block {
+    margin-bottom: 40px;
+}
+
+.quality {
+    margin-left: 50px;
+}

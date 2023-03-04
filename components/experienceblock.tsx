@@ -45,7 +45,7 @@ export default function ExperienceBlock(props: { delay: any; title: string | num
                     {props.children}
                 </div>
                 <div className={experienceStyles.skills}>
-                    skills: {props.skills}
+                    Skills: {props.skills}
                 </div>
             </motion.div>
         </>
