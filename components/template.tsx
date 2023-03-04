@@ -60,7 +60,7 @@ export default function Template(props: { children: string | number | boolean | 
                                 <Link href="/education">- Education</Link>
                                 <Link href="/">- Experience</Link>
                                 <Link href="/works">- Works</Link>
-                                <Link href="/">- Qualifications</Link>
+                                <Link href="/experience">- Qualifications</Link>
                                 <Link href="/">- Fun</Link>
                             </div>
                         </div>
