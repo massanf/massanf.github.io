@@ -85,7 +85,7 @@
     color: #999;
 }
 
-.text>div>div {
+.text>div>div>div {
     margin-top: 10px;
 }
 
@@ -96,10 +96,9 @@
     color: #999;
 }
 
-.text>div>div>span>div {
+.text>div>div>div>span>div {
     display: inline-block;
-    margin-bottom: -5px;
-    vertical-align: sub;
+    vertical-align: baseline;
 }
 
 .projectLinks {
