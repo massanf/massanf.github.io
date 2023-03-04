@@ -1,0 +1,32 @@
+.sidebar {
+    font-family: var(--font-mono);
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    color: #fff;
+    height: 100%;
+    overflow: auto;
+    left: 0;
+    order: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+    .sidebar {
+        display: none;
+    }
+}
