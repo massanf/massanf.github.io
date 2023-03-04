@@ -13,6 +13,7 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import { faMedium } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faMicrosoft } from "@fortawesome/free-brands-svg-icons"
+import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -60,6 +61,9 @@ export default function Home() {
                         <div>
                             <span className={workStyles.projectLinks}>
                                 <a href="https://www.concerthall.info" target="_blank">concerthall.info</a>
+                                <FontAwesomeIcon icon={faTwitter} className={workStyles.brandIcon} /><a href="https://www.twitter.com/concerthallinfo" target="_blank">
+                                    twitter
+                                </a>
                                 <FontAwesomeIcon icon={faGithub} className={workStyles.brandIcon} /><a href="https://github.com/trombiano1/applemusicconcerthall" target="_blank">
                                     GitHub
                                 </a>
