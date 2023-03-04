@@ -21,7 +21,7 @@ export default function Home() {
         <Template>
             <div className={styles.mainAreaTransparent}>
                 <div>
-                    <WorkBlock img={lookout} title={
+                    <WorkBlock delay={0} img={lookout} title={
                         <a href="https://pypi.org/project/lookout-python/" target="_blank">
                             Lookout Notifier<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
                         </a>
@@ -52,7 +52,7 @@ export default function Home() {
                         or terminates with an error. You can also use regex to customize. Available for download via <span className={workStyles.mono}>pip</span>.
                     </WorkBlock>
 
-                    <WorkBlock img={concerthall} title={
+                    <WorkBlock delay={0.2} img={concerthall} title={
                         <a href="https://concerthall.info" target="_blank">
                             concerthall.info<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
                         </a>
@@ -69,7 +69,7 @@ export default function Home() {
                         <span className={workStyles.mono}>concerthall.info</span> is a small project I created to make it easier to find numerous classical music performances using Apple Music API and open-source API project Open Opus with Node.js, Express, SQL and Bootstrap 5.
                     </WorkBlock>
 
-                    <WorkBlock img={competitive} title={
+                    <WorkBlock delay={0.4} img={competitive} title={
                         <a href="https://marketplace.visualstudio.com/items?itemName=trombiano1.vscode-compcalc" target="_blank">
                             Competitive Calculator<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
                         </a>

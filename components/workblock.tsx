@@ -9,23 +9,22 @@ import { motion } from 'framer-motion';
 const inter = Inter({ subsets: ['latin'] })
 
 
-export default function WorkBlock(props: { img: string | StaticImageData; title: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; children: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; links: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; }) {
+export default function WorkBlock(props: { img: string | StaticImageData; title: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; children: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; links: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; delay: number;}) {
     return (
         <>
             <motion.div initial="hidden" animate="visible" variants={{
                 hidden: {
                     scale: .95,
                     opacity: 0,
-                    y: 50
                 },
                 visible: {
                     scale: 1,
                     opacity: 1,
                     transition: {
-                        delay: .4,
-                        ease: "easeOut"
+                        delay: props.delay + 0.2,
+                        ease: "easeOut",
+                        duration: 0.5
                     },
-                    y: 0
                 }
             }} className={workStyles.workBlock}>
                 <div className={workStyles.imageWrap}>
