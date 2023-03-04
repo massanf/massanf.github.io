@@ -1,11 +1,58 @@
-.block>h3 {
-    font-family: var(--font-mono);
+.block {
+    color: #EEEAE6;
+    padding: 20px;
+    padding-bottom: 0px;
 }
 
-.block {
-    margin-bottom: 40px;
+.block>h3 {
+    font-family: var(--font-mono);
+    font-size: 20px;
 }
 
 .quality {
     margin-left: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.quality>div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding: 10px;
+}
+
+.quality div {
+    display: block;
+}
+
+.quality>div>div>div {
+    color: #EEEAE6;
+}
+
+.name {
+    
+    padding: 0px 10px 0px 10px;
+}
+
+.quality>div>div a {
+    /* margin-left: 25px; */
+    font-family: var(--font-mono);
+}
+
+.quality>div>div>div>span {
+    display: inline-block;
+    font-family: var(--font-mono);
+}
+
+.quality a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.qualityName {
+    font-size: 12px;
 }

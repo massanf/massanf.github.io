@@ -14,11 +14,10 @@ export default function Sidebar() {
         <div className={styles.contentArea}>
             <div className={sidebarStyle.sidebar}>
                 <Link href="/">- Home</Link>
-                <Link href="/education">- Education</Link>
-                <Link href="/experience">- Experience</Link>
                 <Link href="/works">- Works</Link>
+                <Link href="/education">- Education</Link>
+                <Link href="/carrer">- Carrer</Link>
                 <Link href="/qualifications">- Qualifications</Link>
-                <Link href="/">- Fun</Link>
             </div>
         </div>
     )

@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import titleStyles from '@/styles/Title.module.css'
 import bg from '../img/bg-masthead.jpg'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faCircle } from "@fortawesome/free-solid-svg-icons"

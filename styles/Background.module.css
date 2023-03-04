@@ -55,6 +55,7 @@
 }
 
 .educationBlockShort {
+    line-height: 1;
     padding-top: 0px;
     padding-bottom: 0px;
     height: 100%;
@@ -92,7 +93,7 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    line-height: 1.8;
+    /* line-height: 1.8; */
 }
 
 .header::before {

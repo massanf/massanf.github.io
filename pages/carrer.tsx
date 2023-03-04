@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import experienceStyles from '@/styles/Experience.module.css'
+import carrerStyles from '@/styles/Carrer.module.css'
 import Template from '../components/template'
 import concerthall from '../img/works/concerthall.png'
 import lookout from '../img/works/lookout.png'
 import competitive from '../img/works/competitive.png'
 import qiita from '../img/logos/qiita.png'
-import ExperienceBlock from '../components/experienceblock'
+import CarrerBlock from '../components/carrerblock'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import { faMedium } from "@fortawesome/free-brands-svg-icons"
@@ -37,19 +37,19 @@ export default function Home() {
             }}>
 
                 <h2 className={styles.heading}>
-                    <p className={inter.className}>Experience</p>
+                    <p className={inter.className}>Carrer</p>
                 </h2>
 
-                <ExperienceBlock
+                <CarrerBlock
                     title="AI Academic Affairs Researchers"
                     company="Nagase Brothers Inc. - Part Time"
                     date="Jan. 2022 - Present"
                     skills="Python, Microsoft Azure, Amazon Web Services, Google Cloud Platform"
                     delay={0.1}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis metus dui. Vivamus facilisis felis ipsum, et dictum arcu maximus non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean quis urna felis. Aenean ultricies lacus sed luctus vehicula.
-                </ExperienceBlock>
+                </CarrerBlock>
 
-                <ExperienceBlock
+                <CarrerBlock
                     title="Application Engineer"
                     company={
                         <p>Rakuten Summmer Short Internship - Internship  <span>1st place</span></p>
@@ -58,9 +58,9 @@ export default function Home() {
                     skills="Python, AWS, Microsoft Azure, Amazon Web Services, Google Cloud Platform"
                     delay={0.3}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis metus dui. Vivamus facilisis felis ipsum, et dictum arcu maximus non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean quis urna felis. Aenean ultricies lacus sed luctus vehicula.
-                </ExperienceBlock>
+                </CarrerBlock>
 
-                <ExperienceBlock
+                <CarrerBlock
                     title={
                         <p>Teaching Assistant <span>&</span> Material Development</p>
                     }
@@ -69,7 +69,7 @@ export default function Home() {
                     skills="Unity · C# · Teaching · Technical Writing · Coaching"
                     delay={0.5}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis metus dui. Vivamus facilisis felis ipsum, et dictum arcu maximus non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean quis urna felis. Aenean ultricies lacus sed luctus vehicula.
-                </ExperienceBlock>
+                </CarrerBlock>
             </motion.div>
         </Template >
     )

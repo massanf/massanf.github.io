@@ -70,9 +70,7 @@ export default function Home() {
                     </EducationBlock>
 
                     <EducationBlock date="Apr. 2015" logotype={backgroundStyles.highschool} country="🇯🇵Japan">
-                        <p className={inter.className}>
-                            Tokyo Gakugei University Senior High School
-                        </p>
+                        Tokyo Gakugei University Senior High School
                     </EducationBlock>
 
                     <EducationBlock date="Apr. 2014" logotype={backgroundStyles.nido} country="🇨🇱Chile">

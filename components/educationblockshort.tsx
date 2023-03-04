@@ -18,9 +18,9 @@ export default function ShortEducationBlock(props: { date: string | number | boo
                         <div className={backgroundStyles.logo} id={backgroundStyles.transparent}>
                         </div>
                         <div className={backgroundStyles.schoolName}>
-                            <p className={inter.className}>
+                            {/* <p className={inter.className}> */}
                                 {props.children}
-                            </p>
+                            {/* </p> */}
                             <span className={backgroundStyles.countryName}>
                                 {props.country}
                             </span>
