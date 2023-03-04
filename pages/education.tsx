@@ -6,6 +6,7 @@ import EducationBlock from '../components/educationblock'
 import ShortEducationBlock from '../components/educationblockshort'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
+import { motion } from 'framer-motion';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -14,7 +15,22 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
     return (
         <Template>
-            <div className={styles.mainArea}>
+            <motion.div  initial="hidden" animate="visible" variants={{
+                    hidden: {
+                        scale: 1,
+                        opacity: 0,
+                        y: 50
+                    },
+                    visible: {
+                        scale: 1,
+                        opacity: 1,
+                        transition: {
+                            ease: "easeOut",
+                            duration: 0.5
+                        },
+                        y: 0
+                    }
+                }} className={styles.mainArea}>
                 <h2 className={styles.heading}>
                     <p className={inter.className}>Education & Background</p>
                 </h2>
@@ -98,7 +114,7 @@ export default function Home() {
                         Big bang 💥
                     </ShortEducationBlock>
                 </div>
-            </div>
+            </motion.div>
         </Template>
     )
 }
