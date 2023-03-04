@@ -9,6 +9,7 @@
     min-height: -webkit-fill-available;
     position: fixed;
     overflow: scroll;
+    background-color: #280000;
 }
 
 .description {
