@@ -53,13 +53,13 @@ export default function Home() {
                     </WorkBlock>
 
                     <WorkBlock delay={0.2} img={concerthall} title={
-                        <a href="https://concerthall.info" target="_blank">
+                        <a href="https://www.concerthall.info" target="_blank">
                             concerthall.info<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
                         </a>
                     } links={
                         <div>
                             <span className={workStyles.projectLinks}>
-                                <a href="https://concerthall.info" target="_blank">concerthall.info</a>
+                                <a href="https://www.concerthall.info" target="_blank">concerthall.info</a>
                                 <FontAwesomeIcon icon={faGithub} className={workStyles.brandIcon} /><a href="https://github.com/trombiano1/applemusicconcerthall" target="_blank">
                                     GitHub
                                 </a>

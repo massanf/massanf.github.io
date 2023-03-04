@@ -58,9 +58,9 @@ export default function Template(props: { children: string | number | boolean | 
                             <div className={sidebarStyle.sidebar}>
                                 <Link href="/">- Home</Link>
                                 <Link href="/education">- Education</Link>
-                                <Link href="/">- Experience</Link>
+                                <Link href="/experience">- Experience</Link>
                                 <Link href="/works">- Works</Link>
-                                <Link href="/experience">- Qualifications</Link>
+                                <Link href="/">- Qualifications</Link>
                                 <Link href="/">- Fun</Link>
                             </div>
                         </div>
