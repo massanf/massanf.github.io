@@ -5,15 +5,15 @@ import backgroundStyles from '@/styles/Background.module.css'
 import workStyles from '@/styles/Work.module.css'
 import { ReactFragment, ReactPortal, ReactElement, JSXElementConstructor } from 'react'
 import { motion } from 'framer-motion';
-import experienceStyles from '@/styles/Experience.module.css'
+import carrerStyles from '@/styles/Carrer.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 
-export default function ExperienceBlock(props: { delay: any; title: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; company: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; date: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; children: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; skills: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined }) {
+export default function CarrerBlock(props: { delay: any; title: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; company: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; date: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; children: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; skills: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined }) {
     return (
         <>
-            <motion.div className={experienceStyles.experienceBlock} initial="hidden" animate="visible" variants={{
+            <motion.div className={carrerStyles.carrerBlock} initial="hidden" animate="visible" variants={{
                 hidden: {
                     scale: 1,
                     opacity: 0,
@@ -30,21 +30,21 @@ export default function ExperienceBlock(props: { delay: any; title: string | num
                     y: 0
                 }
             }}>
-                <div className={experienceStyles.header}>
+                <div className={carrerStyles.header}>
                     <h3>
                         {props.title}
                     </h3>
                     <div>
                         {props.company}
                     </div>
-                    <div className={experienceStyles.date}>
+                    <div className={carrerStyles.date}>
                         {props.date}
                     </div>
                 </div>
-                <div className={experienceStyles.text}>
+                <div className={carrerStyles.text}>
                     {props.children}
                 </div>
-                <div className={experienceStyles.skills}>
+                <div className={carrerStyles.skills}>
                     Skills: {props.skills}
                 </div>
             </motion.div>
