@@ -18,7 +18,6 @@ export default function Home() {
             <motion.div  initial="hidden" animate="visible" variants={{
                     hidden: {
                         scale: 1,
-                        opacity: 0,
                         y: 50
                     },
                     visible: {
@@ -26,7 +25,7 @@ export default function Home() {
                         opacity: 1,
                         transition: {
                             ease: "easeOut",
-                            duration: 0.5
+                            duration: 0.2
                         },
                         y: 0
                     }
