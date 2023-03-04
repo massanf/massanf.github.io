@@ -1,0 +1,42 @@
+.experienceBlock {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.experienceBlock:last-child {
+    margin-bottom: 10px;
+}
+
+.header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.experienceBlock>.text {
+    padding-top: 15px;
+}
+
+.skills {
+    color: #999;
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 0px 10px 0px 10px;
+}
+
+.date {
+    color: #999;
+    font-size: 13px;
+    padding-top: 3px;
+}
+
+.header>div>p>span {
+    color: #ffa;
+}
+
+.header>h3>p>span {
+    color: #aaa;
+    font-size: 23px;
+}

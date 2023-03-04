@@ -164,7 +164,7 @@
 .mainArea {
     width: 100%;
     /* background-color: rgba(255, 255, 255, 0.5); */
-    color: #fff;
+    color: #EEEAE6;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -174,25 +174,25 @@
 .mainAreaTransparent {
     width: 100%;
     /* background-color: rgba(255, 255, 255, 0.5); */
-    color: #fff;
+    color: #EEEAE6;
     padding: 20px;
     padding-left: 60px;
 }
 
 .contentArea {
     display: flex;
-    color: #fff;
+    color: #EEEAE6;
 }
 
 .name {
     margin-top: 50px;
-    color: #fff;
+    color: #EEEAE6;
     display: flex;
 }
 
 .name>div>h1 {
     font-size: 50px;
-    color: #fff;
+    color: #EEEAE6;
     width: 100%;
     padding: 20px;
     padding-top: 0px;
@@ -200,7 +200,7 @@
 }
 
 .name>div>span {
-    color: #fff;
+    color: #EEEAE6;
     width: 100%;
     padding: 20px;
     margin-top: 50px;
@@ -219,7 +219,7 @@
     width: 20px;
     top: 20px;
     left: 10px;
-    color: #fff !important;
+    color: #EEEAE6 !important;
     /* padding-right: 15px; */
     /* padding-left: 15px; */
     height: 50x;
@@ -228,7 +228,7 @@
 
 .overlay {
     background-color: #111 !important;
-    color: #fff !important;
+    color: #EEEAE6 !important;
 }
 
 .navbarButton:hover {
@@ -414,9 +414,9 @@
 }
 
 .maincontainer a:hover {
-    color: #fff !important;
+    color: #EEEAE6 !important;
 }
 
 .contentArea a:hover {
-    color: #fff !important;
+    color: #EEEAE6 !important;
 }

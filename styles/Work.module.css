@@ -22,7 +22,7 @@
     width: 300px;
     align-items: stretch;
     position: relative;
-    background-color: #fff;
+    background-color: #EEEAE6;
     overflow: hidden;
     border-radius: 20px 0px 0px 20px;
 }
@@ -42,6 +42,7 @@
     margin-bottom: 5px;
     border-bottom: 1px solid #333;
     font-family: var(--font-mono);
+    font-size: 25px;
 }
 
 .text>hr {
@@ -60,17 +61,17 @@
 }
 
 .text a {
-    color: #fff;
+    color: #EEEAE6;
     text-decoration: none;
 }
 
 .text a:hover {
-    color: #fff;
+    color: #EEEAE6;
     text-decoration: underline;
 }
 
 .text>p>a {
-    color: #fff;
+    color: #EEEAE6;
     text-decoration: underline;
 }
 

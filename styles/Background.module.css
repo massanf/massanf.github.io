@@ -1,12 +1,12 @@
 
 /* education block */
 .educationBlockWrap {
-    border-left: 1px solid #fff;
+    border-left: 1px solid #EEEAE6;
     position: relative;
 }
 
 #time {
-    border-left: 1px dashed #fff;
+    border-left: 1px dashed #EEEAE6;
     position: relative;
     height: 50px;
 }
@@ -26,8 +26,8 @@
     height: 50%;
     top: calc(50%);
     left: 0;
-    background-color: #fff;
-    border-left: 1px solid #fff;
+    background-color: #EEEAE6;
+    border-left: 1px solid #EEEAE6;
 }
 
 .educationBlockWrap:last-child {
@@ -41,8 +41,8 @@
     height: 50%;
     top: 0;
     left: 0;
-    background-color: #fff;
-    border-left: 1px solid #fff;
+    background-color: #EEEAE6;
+    border-left: 1px solid #EEEAE6;
 }
 
 .educationBlock {
@@ -73,7 +73,7 @@
 .date ::before {
     content: '';
     position: absolute;
-    border: 1px solid #fff;
+    border: 1px solid #EEEAE6;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -102,7 +102,7 @@
     height: 0px;
     top: calc(50% - 18px);
     left: -40px;
-    /* border-bottom: 3px dotted #fff; */
+    /* border-bottom: 3px dotted #EEEAE6; */
     justify-content: center;
     align-items: center;
 }
@@ -124,7 +124,7 @@
 }
 
 #eeic {
-    background-color: #fff;
+    background-color: #EEEAE6;
 }
 
 #utokyo {
@@ -222,7 +222,7 @@
 
     #time {
         content: 'asdf';
-        color: #fff;
+        color: #EEEAE6;
         border: none;
         height: 15px;
         margin-bottom: 50px;
