@@ -34,7 +34,8 @@ export default function Template(props: { children: string | number | boolean | 
                 backgroundImage: `url(${bg.src})`,
                 width: '100%',
                 height: '100%',
-                backgroundSize: 'cover'
+                backgroundSize: 'cover',
+                backgroundPosition: '80% 20%'
             }}>
                 <div className={styles.navbarButtonWrap}>
                     <a onClick={() => setState({ isPaneOpen: true })} className={styles.navbarButton}>

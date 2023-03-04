@@ -10,6 +10,7 @@
     position: fixed;
     overflow: scroll;
     background-color: #280000;
+    background-position: right;
 }
 
 .description {
