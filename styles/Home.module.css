@@ -6,8 +6,10 @@
     /* padding: 6rem; */
     min-height: 100vh;
     height: 100vh;
+    min-height: -webkit-fill-available;
     position: fixed;
     overflow: scroll;
+    background-color: #280000;
 }
 
 .description {
