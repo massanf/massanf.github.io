@@ -180,6 +180,7 @@
 }
 
 .name {
+    color: #fff;
     display: flex;
     justify-content: right;
     align-items: center;

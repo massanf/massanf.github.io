@@ -208,6 +208,7 @@
 }
 
 .navbarButton {
+    position: relative;
     width: 60px;
     top: calc(50% - 30px);
     padding-right: 15px;
