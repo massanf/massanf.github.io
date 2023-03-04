@@ -10,7 +10,7 @@ import experienceStyles from '@/styles/Experience.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 
-export default function ExperienceBlock(props) {
+export default function ExperienceBlock(props: { delay: any; title: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; company: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; date: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; children: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; skills: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined }) {
     return (
         <>
             <motion.div className={experienceStyles.experienceBlock} initial="hidden" animate="visible" variants={{
