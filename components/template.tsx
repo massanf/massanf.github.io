@@ -7,7 +7,7 @@ import Sidebar from '../components/sidebar'
 import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from 'react'
 import sidebarStyle from '../styles/TitleSidebar.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { Component, useState } from "react";
+import React, {  useState } from "react";
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"

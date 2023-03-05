@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-// import SidebarContent from '../components/sidebarcontent'
 import titleSidebarStyle from '../styles/TitleSidebar.module.css'
 import styles from '@/styles/Home.module.css'
 
