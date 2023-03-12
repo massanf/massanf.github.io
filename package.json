@@ -29,6 +29,7 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "serve": "^14.2.0"
+    "serve": "^14.2.0",
+    "sharp": "^0.31.3"
   }
 }

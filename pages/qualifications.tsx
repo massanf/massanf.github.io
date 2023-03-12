@@ -3,10 +3,10 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import qualificationsStyles from '@/styles/Qualifications.module.css'
 import Template from '../components/template'
-import atcoder from '../img/logos/atcoder.svg'
-import cf from '../img/logos/cf.png'
-import eiken from '../img/logos/eiken.png'
-import toeic from '../img/logos/toeic.png'
+import atcoder from '/logos/atcoder.svg'
+import cf from '/logos/cf.png'
+import eiken from '/logos/eiken.png'
+import toeic from '/logos/toeic.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import { motion } from 'framer-motion';
