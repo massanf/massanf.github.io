@@ -1,4 +1,5 @@
-import Image from 'next/image'
+// import Image from 'next/image
+import ExportedImage from "next-image-export-optimizer";
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import workStyles from '@/styles/Work.module.css'
@@ -38,7 +39,7 @@ export default function Home() {
                             </span>
                             <span className={workStyles.projectLinks}>
                                 <div>
-                                    <Image src={qiita} height={20} width={20} alt="qiita logo" />
+                                    <ExportedImage src={qiita} height={20} width={20} alt="qiita logo" />
                                 </div>
                                 <a href="https://qiita.com/trombiano1/items/f54f67dd90e7ec8e3709" target="_blank">Qiita</a>
                             </span>
@@ -86,7 +87,7 @@ export default function Home() {
                             </span>
                             <span className={workStyles.projectLinks}>
                                 <div>
-                                    <Image src={qiita} height={20} width={20} alt="qiita logo" />
+                                    <ExportedImage src={qiita} height={20} width={20} alt="qiita logo" />
                                 </div>
                                 <a href="https://qiita.com/trombiano1/items/aacee3c576e0fd19d417" target="_blank">Qiita</a>
                             </span>

@@ -1,4 +1,5 @@
-import Image from 'next/image'
+// import Image from 'next/image'
+import ExportedImage from "next-image-export-optimizer";
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import qualificationsStyles from '@/styles/Qualifications.module.css'
@@ -39,7 +40,7 @@ export default function Home() {
                 <div className={qualificationsStyles.block}>
                     <h3>- Coding Copetitions</h3>
                     <div className={qualificationsStyles.quality}>
-                        <Image src={atcoder} height={40} width={40} alt="atcoder logo" className={qualificationsStyles.logo} />
+                        <ExportedImage src={atcoder} height={40} width={40} alt="atcoder logo" className={qualificationsStyles.logo} />
                         <div>
                             <div>
                                 <a href="https://www.atcoder.jp/user/trombiano1" target="_blank" style={{ color: "#45a6c6" }}>trombiano1</a>
@@ -51,7 +52,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={qualificationsStyles.quality}>
-                        <Image src={cf} height={40} width={40} alt="atcoder logo" className={qualificationsStyles.logo} />
+                        <ExportedImage src={cf} height={40} width={40} alt="atcoder logo" className={qualificationsStyles.logo} />
                         <div>
                             <div>
                                 <a href="https://www.atcoder.jp/user/trombiano1" target="_blank" style={{ color: "#aaa" }}>trombiano1</a>
@@ -66,7 +67,7 @@ export default function Home() {
                 <div className={qualificationsStyles.block}>
                     <h3>- English</h3>
                     <div className={qualificationsStyles.quality}>
-                        <Image src={eiken} height={35} width={40} alt="atcoder logo" className={qualificationsStyles.logo} />
+                        <ExportedImage src={eiken} height={35} width={40} alt="atcoder logo" className={qualificationsStyles.logo} />
                         <div>
                             <div>
                                 <div>
@@ -79,7 +80,7 @@ export default function Home() {
                     </div>
 
                     <div className={qualificationsStyles.quality}>
-                        <Image src={toeic} height={30} width={40} alt="atcoder logo" className={qualificationsStyles.logo} />
+                        <ExportedImage src={toeic} height={30} width={40} alt="atcoder logo" className={qualificationsStyles.logo} />
                         <div>
                             <div>
                                 <div>

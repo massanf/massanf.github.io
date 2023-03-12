@@ -1,4 +1,5 @@
-import Image from 'next/image'
+// import Image from 'next/image'
+import ExportedImage from "next-image-export-optimizer";
 import { StaticImageData } from "next/image"
 import { Inter } from 'next/font/google'
 import workStyles from '@/styles/Work.module.css'
@@ -27,7 +28,7 @@ export default function WorkBlock(props: { img: string | StaticImageData; title:
                 }
             }} className={workStyles.workBlock}>
                 <div className={workStyles.imageWrap}>
-                    <Image className={workStyles.coverImage} src={props.img} alt="lookout screenshot" fill />
+                    <ExportedImage className={workStyles.coverImage} src={props.img} alt="lookout screenshot" fill />
                 </div>
                 <div className={workStyles.text}>
                     <h2 className={inter.className}>
