@@ -7,11 +7,15 @@ import bg from '../img/bg-masthead.jpg'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faCircle } from "@fortawesome/free-solid-svg-icons"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faYoutube } from "@fortawesome/free-brands-svg-icons"
+
+import atcoder from '../img/logos/atcoder.svg'
+import cf from '../img/logos/cf.png'
+import eiken from '../img/logos/eiken.png'
+import toeic from '../img/logos/toeic.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
