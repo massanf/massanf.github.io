@@ -360,6 +360,11 @@
         position: absolute;
         bottom: 0;
     }
+
+    .contentArea {
+        height: 100vh;
+        width: 80%;
+    }
 }
 
 /* Tablet and Smaller Desktop */
