@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { StaticImageData } from "next/image"
 import { Inter } from 'next/font/google'
-import backgroundStyles from '@/styles/Background.module.css'
 import workStyles from '@/styles/Work.module.css'
 import { ReactFragment, ReactPortal, ReactElement, JSXElementConstructor } from 'react'
 import { motion } from 'framer-motion';
