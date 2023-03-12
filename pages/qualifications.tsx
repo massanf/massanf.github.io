@@ -7,8 +7,6 @@ import atcoder from '../img/logos/atcoder.svg'
 import cf from '../img/logos/cf.png'
 import eiken from '../img/logos/eiken.png'
 import toeic from '../img/logos/toeic.png'
-import EducationBlock from '../components/educationblock'
-import ShortEducationBlock from '../components/educationblockshort'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import { motion } from 'framer-motion';

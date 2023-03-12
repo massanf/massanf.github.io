@@ -1,18 +1,8 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import carrerStyles from '@/styles/Carrer.module.css'
 import Template from '../components/template'
-import concerthall from '../img/works/concerthall.png'
-import lookout from '../img/works/lookout.png'
-import competitive from '../img/works/competitive.png'
-import qiita from '../img/logos/qiita.png'
 import CarrerBlock from '../components/carrerblock'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
-import { faMedium } from "@fortawesome/free-brands-svg-icons"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faMicrosoft } from "@fortawesome/free-brands-svg-icons"
 const inter = Inter({ subsets: ['latin'] })
 import { motion } from 'framer-motion';
 
