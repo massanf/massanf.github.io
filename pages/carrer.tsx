@@ -34,9 +34,9 @@ export default function Home() {
                     title="AI Academic Affairs Researchers"
                     company="Nagase Brothers Inc. - Part Time"
                     date="Jan. 2022 - Present"
-                    skills="Python, Microsoft Azure, Amazon Web Services, Google Cloud Platform"
+                    skills="Python · Microsoft Azure · Amazon Web Services · Google Cloud Platform"
                     delay={0.1}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis metus dui. Vivamus facilisis felis ipsum, et dictum arcu maximus non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean quis urna felis. Aenean ultricies lacus sed luctus vehicula.
+                    At Nagase Brothers Inc, I served as an AI Academic Affairs Researcher, assisting the company in making well-informed technological decisions. As part of product development teams and in a software engineering capacity, I contributed to multiple projects by introducing and refining automation methods. These improvements increased the efficiency of our employees&apos; work, leading to enhancements in the company&apos;s operational processes. My involvement in these projects demonstrated my commitment to teamwork and practical problem-solving in order to achieve tangible progress.
                 </CarrerBlock>
 
                 <CarrerBlock
@@ -45,9 +45,9 @@ export default function Home() {
                         <p>Rakuten Summmer Short Internship - Internship  <span>1st place</span></p>
                     }
                     date="Aug 2021"
-                    skills="Python, AWS, Microsoft Azure, Amazon Web Services, Google Cloud Platform"
+                    skills="React Native · Firebase · Python · Machine Learning"
                     delay={0.3}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis metus dui. Vivamus facilisis felis ipsum, et dictum arcu maximus non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean quis urna felis. Aenean ultricies lacus sed luctus vehicula.
+                    During a summer internship at Rakuten, I assumed the role of an Application Engineer and was an integral member of a four-person team. My primary focus was on developing the front-end of a mobile application, where I applied my skills in user interface design and programming. As a cohesive unit, our team demonstrated exceptional performance and collaboration, ultimately securing first place among more than a dozen competing teams. This accomplishment highlights my ability to contribute effectively within a team environment and deliver high-quality results under time-sensitive conditions.
                 </CarrerBlock>
 
                 <CarrerBlock
@@ -58,7 +58,7 @@ export default function Home() {
                     date="Apr 2022 - Present"
                     skills="Unity · C# · Teaching · Technical Writing · Coaching"
                     delay={0.5}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis metus dui. Vivamus facilisis felis ipsum, et dictum arcu maximus non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean quis urna felis. Aenean ultricies lacus sed luctus vehicula.
+                    As a Teaching Assistant at the University of Tokyo, I was instrumental in instructing undergraduate students on genetic programming, evolutionary computation, algorithms, and Unity fundamentals. I actively maintained and improved the base projects to facilitate a deeper understanding of the subject matter. My expertise in genetic programming contributed to the publication of written works, showcasing my commitment to knowledge-sharing and ongoing growth in the field of computer science. My experience in this role highlights my dedication to fostering academic excellence and nurturing future talent.
                 </CarrerBlock>
             </motion.div>
         </Template >

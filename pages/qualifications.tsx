@@ -84,7 +84,7 @@ export default function Home() {
                         <div>
                             <div>
                                 <div>
-                                    980 (R: 445, L: 445) - 2022
+                                    980 (R: 440, L: 440) - 2022
                                 </div>
                                 <div  className={qualificationsStyles.qualityName}>TOEIC® L & R
                                     
