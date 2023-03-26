@@ -8,6 +8,7 @@ import atcoder from '../imgs/logos/atcoder.svg'
 import cf from '../imgs/logos/cf.png'
 import eiken from '../imgs/logos/eiken.png'
 import toeic from '../imgs/logos/toeic.png'
+import toefl from '../imgs/logos/toefl.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import { motion } from 'framer-motion';
@@ -80,11 +81,25 @@ export default function Home() {
                     </div>
 
                     <div className={qualificationsStyles.quality}>
-                        <ExportedImage src={toeic} height={30} width={40} alt="atcoder logo" className={qualificationsStyles.logo} />
+                        <ExportedImage src={toeic} height={30} width={40} alt="toeic logo" className={qualificationsStyles.logo} />
                         <div>
                             <div>
                                 <div>
                                     980 (R: 440, L: 440) - 2022
+                                </div>
+                                <div  className={qualificationsStyles.qualityName}>TOEIC® L & R
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={qualificationsStyles.quality}>
+                        <ExportedImage src={toefl} height={30} width={40} alt="toefl logo" className={qualificationsStyles.logo} />
+                        <div>
+                            <div>
+                                <div>
+                                    107 - 2022
                                 </div>
                                 <div  className={qualificationsStyles.qualityName}>TOEIC® L & R
                                     

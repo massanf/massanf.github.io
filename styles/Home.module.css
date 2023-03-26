@@ -171,6 +171,13 @@
     padding: 20px;
     padding-left: 60px;
     min-height: 100vh;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.homep {
+    line-height: 2;
+    margin-bottom: 20px;
 }
 
 .mainAreaTransparent {
@@ -421,4 +428,27 @@
 
 .contentArea a:hover {
     color: #EEEAE6 !important;
+}
+
+.youtube {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.youtubeTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtubeTitle>p {
+    display: flex;
+    font-family: var(--font-mono);
+}
+
+.youtube>iframe {
+    margin: auto;
 }

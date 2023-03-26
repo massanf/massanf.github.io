@@ -14,6 +14,7 @@ export default function Sidebar() {
         <div className={styles.contentArea}>
             <div className={titleSidebarStyle.sidebar}>
                 <Link href="/">- Home</Link>
+                <Link href="/hello">- Hello</Link>
                 <Link href="/works">- Open-source Works</Link>
                 <Link href="/education">- Education</Link>
                 <Link href="/carrer">- Carrer</Link>
