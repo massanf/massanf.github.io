@@ -43,7 +43,7 @@ export default function Home() {
                         </div>
                         <div>
                             <a href="https://www.i.u-tokyo.ac.jp" target="_blank">
-                                <span className={styles.dark}>@</span> Graduate School of Information Science and Technology, The University of Tokyo
+                                <span className={styles.dark}>@</span> Dept. of Information & Communication Engineering, Graduate School of Information Science and Technology, The University of Tokyo
                                 <FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
                             </a>
                         </div>
