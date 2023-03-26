@@ -42,7 +42,7 @@ export default function Home() {
                     <div className={styles.youtubeTitle}>
                         <p>Debussy:  Suite bergamasque<br />IV. Passepied</p>
                     </div>
-                    <iframe width="200" height="150" src="https://www.youtube.com/embed/O0GuQ1CNFa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="200" height="150" src="https://www.youtube.com/embed/O0GuQ1CNFa8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
                 <hr></hr>
 
@@ -59,7 +59,7 @@ export default function Home() {
                     <div className={styles.youtubeTitle}>
                         <p>Tchaikovsky: Symphony No. 6<br />I. Adagio</p>
                     </div>
-                    <iframe width="200" height="150" src="https://www.youtube.com/embed/mi_6jis8x8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="200" height="150" src="https://www.youtube.com/embed/mi_6jis8x8g" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
                 <hr></hr>
 
