@@ -99,7 +99,7 @@ export default function Home() {
                         <div>
                             <div>
                                 <div>
-                                    107 - 2022
+                                    107 - 2021
                                 </div>
                                 <div  className={qualificationsStyles.qualityName}>TOEIC® L & R
                                     
