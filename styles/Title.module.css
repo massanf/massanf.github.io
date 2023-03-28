@@ -3,9 +3,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* padding: 6rem; */
-    height: 100vh;
+    height: 100dvh;
     position: fixed;
+    background-color: #280000;
 }
 
 .description {

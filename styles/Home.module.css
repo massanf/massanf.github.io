@@ -1,16 +1,19 @@
 .main {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     /* padding: 6rem; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     height: 100vh;
     min-height: -webkit-fill-available;
     position: fixed;
+    width: 100%;
     overflow: scroll;
     background-color: #280000;
     background-position: right;
+    min-height: 100vh;
 }
 
 .description {
@@ -158,8 +161,8 @@
 
 .maincontainer {
     width: 80%;
-    /* height: 80vh; */
     margin: auto;
+    margin-bottom: 60px;
 }
 
 .mainArea {
@@ -220,8 +223,9 @@
 }
 
 .navbarButtonWrap{
-    position: absolute;
+    position: relative;
     left: 0;
+    left: max(1em, constant(safe-area-inset-left));
 }
 
 .navbarButton {
@@ -386,7 +390,7 @@
     }
     .name {
         padding-left: 10px;
-        margin-top: 65px;
+        margin-top: 30px;
     }
 }
 
@@ -402,7 +406,7 @@
         display: block;
     }
     .name {
-        margin-top: 65px;
+        margin-top: 30px;
     }
 }
 
