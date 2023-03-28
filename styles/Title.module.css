@@ -6,6 +6,7 @@
     height: 100dvh;
     position: fixed;
     background-color: #280000;
+    background-position: right;
 }
 
 .description {
