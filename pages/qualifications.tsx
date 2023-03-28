@@ -101,7 +101,7 @@ export default function Home() {
                                 <div>
                                     107 - 2021
                                 </div>
-                                <div  className={qualificationsStyles.qualityName}>TOEIC® L & R
+                                <div  className={qualificationsStyles.qualityName}>TOEIC® iBT
                                     
                                 </div>
                             </div>
