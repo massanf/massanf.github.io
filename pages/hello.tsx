@@ -33,6 +33,7 @@ export default function Home() {
                 <p className={styles.homep}>
                     My name is Masayuki Fujita. Thank you for taking your time to visit my webpage. On this particular page, I&apos;m going to write a little bit about myself, along with some of my favorite music pieces. This page won&apos;t have much practical information; instead this page is more about who I am as a person, mainly about my passion for engineering and music. So feel free to skip it if you are in a hurry.
                 </p>
+
                 <hr></hr>
 
                 <p className={styles.homep}>
@@ -40,17 +41,20 @@ export default function Home() {
                 </p>
 
                 <hr></hr>
+
                 <div className={styles.youtube}>
                     <div className={styles.youtubeTitle}>
                         <p>Debussy:  Suite bergamasque<br />IV. Passepied</p>
                     </div>
                     <iframe width="150" height="150" src="https://www.youtube.com/embed/O0GuQ1CNFa8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
+
                 <hr></hr>
 
                 <p className={styles.homep}>
                     My passion for creation continued. At age ten, I won an award by Japan Institute of Invention and Innovation for creating automatic page-turner for piano. Around this time is also when I discovered a <a href="https://www.amazon.co.jp/パソコンを遊ぶ簡単プログラミング―コンピュータを自由に操る「十進BASIC」入門-CD-ROM付-ブルーバックス-木村-良夫/dp/4062573989" target="_blank">2003 book about programming and mathematics<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a> in my family&apos;s bookshelf. It was bought by my father, who, to this day still has not read it despite my continued endorsement. I vividly remember flipping through the book and typing in the BASIC code printed in the book, being electrified to realize all the possiblilities of this new tool called programming that I had just came into contact with.
                 </p>
+
                 <hr></hr>
 
                 <p className={styles.homep}>
@@ -58,6 +62,7 @@ export default function Home() {
                 </p>
 
                 <hr></hr>
+                
                 <div className={styles.youtube}>
                     <div className={styles.youtubeTitle}>
                         <p>Tchaikovsky: Symphony No. 6<br />I. Adagio</p>
