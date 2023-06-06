@@ -31,15 +31,21 @@ export default function Home() {
                 </h1>
 
                 <p className={styles.homep}>
-                    My name is Masayuki Fujita. Thank you for taking your time to visit my webpage. On this particular page, I&apos;m going to write a little bit about myself, along with some of my favorite music pieces. This page won&apos;t have much practical information; instead this page is more about who I am as a person, mainly about my passion for engineering and music. So feel free to skip it if you are in a hurry.
+                    Thank you for visiting my website! I&apos;m Masayuki Fujita. Here, I will write a little bit about myself, accompanied by some of my favorite music. This page won&apos;t contain much practical information; instead, it&apos;s more about who I am as a person, mainly about my passion for engineering and music.
                 </p>
 
                 <hr></hr>
 
                 <p className={styles.homep}>
-                    Ever since I can remember, I have always loved making things. In kindergarten, my parents would keep old cardbord boxes, toiletpaper cores, milk cartons for me to repurpose into imaginative objects like bookshelves and my &ldquo;automatic sushi deployer&rdquo; (which, admittedly, was neither automatic nor a &ldquo;sushi deployer&rdquo;).
+                    Ever since I can remember I&apos;ve always loved making things. In kindergarten, my parents would collect stuff like old cardbord boxes, toiletpaper cores or milk cartons for me to repurpose into imaginative objects like train models or &ldquo;automatic sushi maker&rdquo;.
                 </p>
 
+                <hr></hr>
+
+                <p className={styles.homep}>
+                    Even as I grew older, my passion for creation continued. At age ten, I won an award by Japan Institute of Invention and Innovation for creating automatic page-turner for piano. Around this time is also when I stumbled upon <a href="https://www.amazon.co.jp/パソコンを遊ぶ簡単プログラミング―コンピュータを自由に操る「十進BASIC」入門-CD-ROM付-ブルーバックス-木村-良夫/dp/4062573989" target="_blank">this<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a> 2003 book about programming and mathematics collecting dust in my father&apos;s bookshelf. I vividly remember flipping through the book and copying the BASIC code, being electrified to realize all the possiblilities of this new tool called programming that I had just came into contact with.
+                </p>
+                
                 <hr></hr>
 
                 <div className={styles.youtube}>
@@ -52,15 +58,15 @@ export default function Home() {
                 <hr></hr>
 
                 <p className={styles.homep}>
-                    My passion for creation continued. At age ten, I won an award by Japan Institute of Invention and Innovation for creating automatic page-turner for piano. Around this time is also when I discovered a <a href="https://www.amazon.co.jp/パソコンを遊ぶ簡単プログラミング―コンピュータを自由に操る「十進BASIC」入門-CD-ROM付-ブルーバックス-木村-良夫/dp/4062573989" target="_blank">2003 book about programming and mathematics<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a> in my family&apos;s bookshelf. It was bought by my father, who, to this day still has not read it despite my continued endorsement. I vividly remember flipping through the book and typing in the BASIC code printed in the book, being electrified to realize all the possiblilities of this new tool called programming that I had just came into contact with.
+                    The other important element of my life is my love for music. Learning the trombone alongside the piano, I was exposed to orchestral and chamber pieces as well as piano pieces from a very young age. The experience of listening to and performing classical music has since become essential to my life. I was fortunate enough to have experiences like holding leadership roles within my orchestra, guiding them musically.
                 </p>
 
                 <hr></hr>
-
+                
                 <p className={styles.homep}>
-                    As I grew older, my fascination with music deepened as well. Learning the trombone alongside piano, I was exposed to more orchestral and chamber pieces as well. The experience of listening to and performing classical music is something I wouldn&apos;t trade for anything. I was fortunate enough to hold leadership roles within my orchestra, guiding them musically.
+                    Whether it&apos;s music or software or cardboard projects, I&apos;ve come to realize that the common thread that transpires throughout all my life experiences is that I really enjoy making <i>nice</i> things, whether it&apos;s music or code. Making music is not that different from engineering. You make something, improve it to the best of your abilities, make it as nice as possible, and make people&apos;s day a little bit better along the way. So I am so incredibly excited to see what I can bring into existence.
                 </p>
-
+                
                 <hr></hr>
                 
                 <div className={styles.youtube}>
@@ -70,14 +76,9 @@ export default function Home() {
                     <iframe width="150" height="150" src="https://www.youtube.com/embed/mi_6jis8x8g" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
                 <hr></hr>
-                
-                <p className={styles.homep}>
-                    Whether it&apos;s music or software or cardboard projects, the common thread that transpires throughout all my life experiences is that I really enjoy making something nice. I&apos;ve come to realize that making music is not that different from engineering. You make something, improve it to the best of your abilities, make it as nice as possible, and make people&apos;s day a little bit better along the way. That&apos;s what I want to do with my life. I am so incredibly excited to see what I can bring into existence.
-                </p>
-                <hr></hr>
 
                 <p className={styles.homep}>
-                    Thank you so much for reading till the end. If you are interested in my music taste, I have also written a <a href="https://note.com/trombiano1/n/n9820bb11f739" target="_blank">small article about BGM for programming<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a> (in Japanese).
+                    So that&apos;s it! Thank you so much for reading till the end. I&apos;m excited to see what I can learn. If you are interested in my music taste, I have written a <a href="https://note.com/trombiano1/n/n9820bb11f739" target="_blank">small article about BGM for programming<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a> (in Japanese).
                 </p>
 
             </motion.div>
