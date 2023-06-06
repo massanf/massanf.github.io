@@ -48,7 +48,7 @@ export default function Home() {
                                     <a href="https://www.linkedin.com/in/masayuki-fujita-1509a821b/" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{ color: "00A0DC" }} className={titleStyles.icons} /></a>
                                     <a href="https://www.github.com/trombiano1" target="_blank"><FontAwesomeIcon icon={faGithub} style={{ color: "#aaa" }} className={titleStyles.icons} /></a>
                                     <a href="https://www.youtube.com/channel/UC0ftq_FkXueNKpLYeKmfIaA" target="_blank"><FontAwesomeIcon icon={faYoutube} style={{ color: "#FF0000" }} className={titleStyles.icons} /></a>
-                                    <a href="https://www.twitter.com/trombiano1" target="_blank"><FontAwesomeIcon icon={faTwitter} style={{ color: "#1DA1F2" }} className={titleStyles.icons} /></a>
+                                    <a href="https://www.twitter.com/sudocaffeine" target="_blank"><FontAwesomeIcon icon={faTwitter} style={{ color: "#1DA1F2" }} className={titleStyles.icons} /></a>
                                     <a href="mailto:mfujitadev@gmail.com" style={{ color: "#bbb" }}><FontAwesomeIcon icon={faEnvelope} className={titleStyles.icons} /></a>
                                 </div>
                             </div>

@@ -173,8 +173,8 @@
     padding: 20px;
     padding-left: 60px;
     padding-right: 60px;
-    min-height: 100vh;
-    padding-bottom: 20px;
+    /* min-height: 100vh; */
+    padding-bottom: 40px;
     margin-bottom: 30px;
 }
 
