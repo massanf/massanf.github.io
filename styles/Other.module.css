@@ -109,7 +109,7 @@
 /* Mobile */
 @media (max-width: 700px) {
     .workBlock {
-        display: block;
+        /* display: block; */
         width: 100%;
     }
 
