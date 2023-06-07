@@ -121,7 +121,7 @@ export default function Home() {
                         <p>. . .</p>
                     </div>
 
-                    <ShortEducationBlock date="Dec. 1999" country="🇯🇵Japan">
+                    <ShortEducationBlock date="1999" country="🇯🇵Japan">
                         Born
                     </ShortEducationBlock>
 
