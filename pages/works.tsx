@@ -74,7 +74,7 @@ export default function Home() {
                         <span className={workStyles.mono}>concerthall.info</span> is a small project I created to make it easier to find numerous classical music performances using Apple Music API and open-source API project Open Opus with Node.js, Express, SQL and Bootstrap 5.
                     </WorkBlock>
 
-                    <WorkBlock delay={0.4} img={competitive} title={
+                    <WorkBlock delay={0.1} img={competitive} title={
                         <a href="https://marketplace.visualstudio.com/items?itemName=trombiano1.vscode-compcalc" target="_blank">
                             Competitive Calculator<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
                         </a>

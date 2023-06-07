@@ -18,6 +18,7 @@ export default function Sidebar() {
                 <Link href="/academia">- Academia</Link>
                 <Link href="/carrer">- Carrer</Link>
                 <Link href="/qualifications">- Qualifications</Link>
+                <Link href="/other">- Other</Link>
             </div>
         </div>
     )

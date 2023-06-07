@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function WorkBlock(props: { img: string | StaticImageData; title: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; children: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; links: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; delay: number;}) {
     return (
         <>
-            <motion.div initial="hidden" animate="visible" variants={{
+            <motion.div initial="hidden" whileInView="visible" viewport={{once: true}} variants={{
                 hidden: {
                     scale: .95,
                     opacity: 0,
@@ -21,7 +21,7 @@ export default function WorkBlock(props: { img: string | StaticImageData; title:
                     scale: 1,
                     opacity: 1,
                     transition: {
-                        delay: props.delay + 0.2,
+                        delay: props.delay,
                         ease: "easeOut",
                         duration: 0.5
                     },
