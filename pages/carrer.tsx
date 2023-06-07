@@ -46,7 +46,7 @@ export default function Home() {
                     }
                     date="Aug 2021"
                     skills="React Native · Firebase · Python · Machine Learning"
-                    delay={0.3}>
+                    delay={0.1}>
                     During a summer internship at Rakuten, I assumed the role of an Application Engineer and was an integral member of a four-person team. My primary focus was on developing the front-end of a mobile application, where I applied my skills in user interface design and programming. As a cohesive unit, our team demonstrated exceptional performance and collaboration, ultimately securing first place among more than a dozen competing teams. This accomplishment highlights my ability to contribute effectively within a team environment and deliver high-quality results under time-sensitive conditions.
                 </CarrerBlock>
 
