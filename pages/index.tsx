@@ -32,8 +32,6 @@ export default function Home() {
                 width: '100%',
                 height: '100%',
                 backgroundSize: 'cover',
-                // paddingLeft: 'max(1em, env(safe-area-inset-left))',
-                // paddingRight: 'max(1em, env(safe-area-inset-right))'
             }}>
                 <div className={titleStyles.maincontainer}>
                     <div className={titleStyles.contentArea}>

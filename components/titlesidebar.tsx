@@ -13,10 +13,10 @@ export default function Sidebar() {
         // <SidebarContent sidebarStyle={titleSidebarStyle} />
         <div className={styles.contentArea}>
             <div className={titleSidebarStyle.sidebar}>
-                <Link href="/">- Home</Link>
+                {/* <Link href="/">- Home</Link> */}
                 <Link href="/hello">- Hello</Link>
                 <Link href="/works">- Open-source Works</Link>
-                <Link href="/education">- Education</Link>
+                <Link href="/academia">- Academia</Link>
                 <Link href="/carrer">- Carrer</Link>
                 <Link href="/qualifications">- Qualifications</Link>
             </div>
