@@ -1,0 +1,125 @@
+.workBlock{
+    width: 90%;
+    /* height: 300px; */
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    background-color: #111;
+    margin: auto;
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.22);
+    flex: 1;
+}
+
+.heading {
+    padding-left: 20px;
+}
+
+.imageWrap {
+    display: block;
+    position: relative;
+    width: 300px;
+    align-items: stretch;
+    position: relative;
+    background-color: #EEEAE6;
+    overflow: hidden;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.imageWrap .coverImage {
+    object-fit: cover;
+}
+
+.text {
+    width: 100%;
+}
+
+.text>h2 {
+    margin: 20px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #333;
+    font-family: var(--font-mono);
+    font-size: 25px;
+}
+
+.text>hr {
+    color: #f00;
+    background-color: #f00;
+}
+
+.text>div {
+    padding: 10px;
+    padding-bottom: 20px;
+    height: calc(100% - 20px);
+    padding-right: 30px;
+    padding-left: 30px;
+    line-height: 2.0;
+    overflow: scroll;
+}
+
+.text a {
+    color: #EEEAE6;
+    text-decoration: none;
+}
+
+.text a:hover {
+    color: #EEEAE6;
+    text-decoration: underline;
+}
+
+.text>p>a {
+    color: #EEEAE6;
+    text-decoration: underline;
+}
+
+.mono {
+    font-family: var(--font-mono);
+}
+    
+.brandIcon {
+    width: 18px;
+    display: inline-block;
+    vertical-align: sub;
+    color: #999;
+}
+
+.text>div>div>div {
+    margin-top: 10px;
+}
+
+.projectLinks a {
+    display: inline-block;
+    padding: 0px 25px 0px 5px;
+    text-decoration: underline;
+    color: #999;
+}
+
+.text>div>div>div>span>div {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.projectLinks {
+    display: inline-block;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .workBlock {
+        display: block;
+        width: 100%;
+    }
+
+    .imageWrap {
+        height: 200px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .text h2 {
+        font-size: 20px;
+    }
+}

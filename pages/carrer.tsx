@@ -35,7 +35,7 @@ export default function Home() {
                     company="Nagase Brothers Inc. - Part Time"
                     date="Jan. 2022 - Present"
                     skills="Python · Microsoft Azure · Amazon Web Services · Google Cloud Platform"
-                    delay={0.1}>
+                    delay={0}>
                     At Nagase Brothers Inc, I served as an AI Academic Affairs Researcher, assisting the company in making well-informed technological decisions. As part of product development teams and in a software engineering capacity, I contributed to multiple projects by introducing and refining automation methods. These improvements increased the efficiency of our employees&apos; work, leading to enhancements in the company&apos;s operational processes. My involvement in these projects demonstrated my commitment to teamwork and practical problem-solving in order to achieve tangible progress.
                 </CarrerBlock>
 
@@ -57,7 +57,7 @@ export default function Home() {
                     company="University of Tokyo - Part-time"
                     date="Apr 2022 - Present"
                     skills="Unity · C# · Teaching · Technical Writing · Coaching"
-                    delay={0.5}>
+                    delay={0.1}>
                     As a Teaching Assistant at the University of Tokyo, I was instrumental in instructing undergraduate students on genetic programming, evolutionary computation, algorithms, and Unity fundamentals. I actively maintained and improved the base projects to facilitate a deeper understanding of the subject matter. My expertise in genetic programming contributed to the publication of written works, showcasing my commitment to knowledge-sharing and ongoing growth in the field of computer science. My experience in this role highlights my dedication to fostering academic excellence and nurturing future talent.
                 </CarrerBlock>
             </motion.div>

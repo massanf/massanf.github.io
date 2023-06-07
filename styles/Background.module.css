@@ -178,6 +178,34 @@
     color: #777;
 }
 
+.publication {
+    border: 1px solid #fff;
+    background-color: rgba(100, 100, 100, .3);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.publication h3 {
+    font-size: 20px;
+}
+
+.abstract {
+    font-size: 13px;
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+.footnote {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    font-size: 13px;
+    text-align: right;
+    color: #aaa;
+}
+
 /* Mobile */
 @media (max-width: 700px) {
     .header::before {

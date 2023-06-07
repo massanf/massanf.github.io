@@ -15,9 +15,10 @@ export default function Sidebar() {
                 <Link href="/">- Home</Link>
                 <Link href="/hello">- Hello</Link>
                 <Link href="/works">- Open-source Works</Link>
-                <Link href="/education">- Education</Link>
+                <Link href="/academia">- Academia</Link>
                 <Link href="/carrer">- Carrer</Link>
                 <Link href="/qualifications">- Qualifications</Link>
+                <Link href="/other">- Other</Link>
             </div>
         </div>
     )
