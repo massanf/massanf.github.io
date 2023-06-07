@@ -54,7 +54,7 @@ export default function Home() {
                         or terminates with an error. You can also use regex to customize. Available for download via <span className={workStyles.mono}>pip</span>.
                     </WorkBlock>
 
-                    <WorkBlock delay={0.2} img={concerthall} title={
+                    <WorkBlock delay={0.1} img={concerthall} title={
                         <a href="https://www.concerthall.info" target="_blank">
                             concerthall.info<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
                         </a>
