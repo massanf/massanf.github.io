@@ -28,7 +28,7 @@ export default function WorkBlock(props: { img: string | StaticImageData; title:
                 }
             }} className={workStyles.workBlock}>
                 <div className={workStyles.imageWrap}>
-                    <ExportedImage className={workStyles.coverImage} src={props.img} alt="lookout screenshot" fill />
+                    <ExportedImage className={workStyles.coverImage} src={props.img} alt="lookout screenshot" loading="eager" fill />
                 </div>
                 <div className={workStyles.text}>
                     <h2 className={inter.className}>
