@@ -3,7 +3,7 @@ import TitleSidebar from '../components/titlesidebar'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import titleStyles from '@/styles/Title.module.css'
-import bg from '../imgs/bg-masthead.jpg'
+import bg from '../imgs/bg-masthead.webp'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
@@ -43,11 +43,11 @@ export default function Home() {
                                     Masayuki Fujita
                                 </h1>
                                 <div className={titleStyles.iconsWrap}>
-                                    <a href="https://www.linkedin.com/in/masayuki-fujita-1509a821b/" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{ color: "00A0DC" }} className={titleStyles.icons} /></a>
-                                    <a href="https://www.github.com/trombiano1" target="_blank"><FontAwesomeIcon icon={faGithub} style={{ color: "#aaa" }} className={titleStyles.icons} /></a>
-                                    <a href="https://www.youtube.com/channel/UC0ftq_FkXueNKpLYeKmfIaA" target="_blank"><FontAwesomeIcon icon={faYoutube} style={{ color: "#FF0000" }} className={titleStyles.icons} /></a>
-                                    <a href="https://www.twitter.com/sudocaffeine" target="_blank"><FontAwesomeIcon icon={faTwitter} style={{ color: "#1DA1F2" }} className={titleStyles.icons} /></a>
-                                    <a href="mailto:mfujitadev@gmail.com" style={{ color: "#bbb" }}><FontAwesomeIcon icon={faEnvelope} className={titleStyles.icons} /></a>
+                                    <a href="https://www.linkedin.com/in/masayuki-fujita-1509a821b/" target="_blank" aria-label="linkedin"><FontAwesomeIcon icon={faLinkedin} style={{ color: "00A0DC" }} className={titleStyles.icons} /></a>
+                                    <a href="https://www.github.com/trombiano1" target="_blank" aria-label="github"><FontAwesomeIcon icon={faGithub} style={{ color: "#aaa" }} className={titleStyles.icons} /></a>
+                                    <a href="https://www.youtube.com/channel/UC0ftq_FkXueNKpLYeKmfIaA" target="_blank" aria-label="youtube"><FontAwesomeIcon icon={faYoutube} style={{ color: "#FF0000" }} className={titleStyles.icons} /></a>
+                                    <a href="https://www.twitter.com/sudocaffeine" target="_blank" aria-label="twitter"><FontAwesomeIcon icon={faTwitter} style={{ color: "#1DA1F2" }} className={titleStyles.icons} /></a>
+                                    <a href="mailto:mfujitadev@gmail.com" style={{ color: "#bbb" }} aria-label="email"><FontAwesomeIcon icon={faEnvelope} className={titleStyles.icons} /></a>
                                 </div>
                             </div>
                         </div>
