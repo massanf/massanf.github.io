@@ -7,7 +7,7 @@ import Template from '../components/template'
 import concerthall from '../imgs/works/concerthall.webp'
 import lookout from '../imgs/works/lookout.webp'
 import competitive from '../imgs/works/competitive.webp'
-import qiita from '../imgs/logos/qiita.png'
+import qiita from '../imgs/logos/qiita.webp'
 import WorkBlock from '../components/workblock'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"

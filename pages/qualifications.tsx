@@ -6,14 +6,11 @@ import qualificationsStyles from '@/styles/Qualifications.module.css'
 import QualificationsBlock from '../components/qualificationsblock'
 import Template from '../components/template'
 import atcoder from '../imgs/logos/atcoder.svg'
-import cf from '../imgs/logos/cf.png'
-import eiken from '../imgs/logos/eiken.png'
-import toeic from '../imgs/logos/toeic.png'
-import toefl from '../imgs/logos/toefl.png'
+import eiken from '../imgs/logos/eiken.webp'
+import toeic from '../imgs/logos/toeic.webp'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import { motion } from 'framer-motion';
-import { propTypes } from "react-bootstrap/esm/Image";
 
 
 const inter = Inter({ subsets: ['latin'] })
