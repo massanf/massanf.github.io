@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 const inter = Inter({ subsets: ['latin'] })
 
 
-export default function WorkBlock(props: { img: string | StaticImageData; title: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; children: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; links: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; delay: number;}) {
+export default function WorkBlock(props: { img: string | StaticImageData; title: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; children: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; links: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; color: string; delay: number;}) {
     return (
         <>
             <motion.div initial="hidden" whileInView="visible" viewport={{once: true}} variants={{
@@ -27,7 +27,7 @@ export default function WorkBlock(props: { img: string | StaticImageData; title:
                     },
                 }
             }} className={workStyles.workBlock}>
-                <div className={workStyles.imageWrap}>
+                <div className={workStyles.imageWrap} style={{backgroundColor: props.color}}>
                     <ExportedImage className={workStyles.coverImage} src={props.img} alt="lookout screenshot" loading="eager" fill />
                 </div>
                 <div className={workStyles.text}>

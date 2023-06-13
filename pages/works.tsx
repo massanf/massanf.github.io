@@ -27,7 +27,7 @@ export default function Home() {
                         <a href="https://pypi.org/project/lookout-python/" target="_blank">
                             Lookout Notifier<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
                         </a>
-                    } links={
+                    } color={"#186db6"} links={
                         <div>
                             <span className={workStyles.projectLinks}>
                                 <a href="https://pypi.org/project/lookout-python/" target="_blank">pypi.org</a>
@@ -58,7 +58,7 @@ export default function Home() {
                         <a href="https://www.concerthall.info" target="_blank">
                             concerthall.info<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
                         </a>
-                    } links={
+                    } color={"#ea2200"} links={
                         <div>
                             <span className={workStyles.projectLinks}>
                                 <a href="https://www.concerthall.info" target="_blank">concerthall.info</a>
@@ -78,7 +78,7 @@ export default function Home() {
                         <a href="https://marketplace.visualstudio.com/items?itemName=trombiano1.vscode-compcalc" target="_blank">
                             Competitive Calculator<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
                         </a>
-                    } links={
+                    } color={"#ffffff"} links={
                         <div>
                             <span className={workStyles.projectLinks}>
                                 <FontAwesomeIcon icon={faMicrosoft} className={workStyles.brandIcon} /><a href="https://marketplace.visualstudio.com/items?itemName=trombiano1.vscode-compcalc" target="_blank">
