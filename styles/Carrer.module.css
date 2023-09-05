@@ -32,6 +32,10 @@
     padding-top: 3px;
 }
 
+.careerBlock a {
+    color: inherit
+}
+
 .header>div>p>span {
     color: #ffa;
 }

@@ -89,6 +89,11 @@
     padding: 4rem 0;
 }
 
+.carrerLink {
+    color: inherit;
+}
+
+
 /* .center::before {
   background: var(--secondary-glow);
   border-radius: 50%;

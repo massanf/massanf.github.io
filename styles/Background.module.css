@@ -206,6 +206,10 @@
     color: #aaa;
 }
 
+.footnote>span {
+    color: #ffa;
+}
+
 /* Mobile */
 @media (max-width: 700px) {
     .header::before {
