@@ -57,7 +57,10 @@ export default function Home() {
                         <div className={backgroundStyles.abstract}>
                             &nbsp; <i>Abstract</i> — Advancements in medical imaging technology have led to the emergence of rotatable X-ray scanning devices, which can capture multiple X-ray images from various angles (X-ray videos) with reduced radiation exposure and subsequent burden compared to computed tomography (CT) scans. However, the potential utility of X-ray videos remain underexplored. This study introduces a novel CT reconstruction technique that combines the Filtered Back Projection method (FBP) with image-to-image translation using a conditional Generative Adversarial Network (conditional GAN). While conventional FBP from X-ray videos produces CT images marred by artifacts and noise due to perspective distortion, our results demonstrate that the Pix2Pix image translation network can effectively mitigate these artifacts, yielding CT scans of superior qualitative and quantitative value.
                         </div>
-                        <div className={backgroundStyles.footnote}>Presented on 13th International Conference on Smart Computing and Artificial Intelligence (SCAI 2023)</div>
+                        <div className={backgroundStyles.footnote}>
+                            Accepted for oral presentation on 13th International Conference on Smart Computing and Artificial Intelligence (SCAI 2023) <br />
+                            Selected as the <span>Best Paper</span> out of more than 300 submissions
+                        </div>
                     </motion.div>
                 </div>
                 <h2 className={styles.heading}>
