@@ -33,6 +33,11 @@
 
 .text {
     width: 100%;
+    overflow: hidden;
+}
+
+.text>div{
+    overflow: hidden;
 }
 
 .text>h2 {
@@ -57,7 +62,7 @@
     padding-right: 30px;
     padding-left: 30px;
     line-height: 2.0;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .text a {

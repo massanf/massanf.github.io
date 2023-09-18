@@ -36,10 +36,12 @@
     justify-content: center;
     padding-left: 15px;
     padding: 10px;
+    overflow: hidden;
 }
 
 .quality div {
     display: block;
+    overflow: hidden;
 }
 
 .quality>div>div>div {

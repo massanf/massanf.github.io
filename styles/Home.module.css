@@ -14,6 +14,7 @@
     background-color: #280000;
     background-position: right;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .description {
