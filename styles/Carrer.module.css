@@ -1,5 +1,5 @@
 .carrerBlock {
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     padding: 20px;
     width: 95%;
     margin: auto;
@@ -12,7 +12,16 @@
 
 .header {
     padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #444;
+}
+
+@media (prefers-color-scheme: dark) {
+    .careerBlock {
+        border: 1px solid #ccc;
+    }
+    .header {
+        border-bottom: 1px solid #ccc;
+    }
 }
 
 .carrerBlock>.text {
@@ -20,16 +29,25 @@
 }
 
 .skills {
-    color: #999;
+    color: #555;
     font-size: 13px;
     margin-top: 10px;
     padding: 0px 10px 0px 10px;
 }
 
 .date {
-    color: #999;
+    color: #555;
     font-size: 13px;
     padding-top: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .skills {
+        color: #999;
+    }
+    .date {
+        color: #999;
+    }
 }
 
 .careerBlock a {
@@ -37,10 +55,22 @@
 }
 
 .header>div>p>span {
-    color: #ffa;
+    color: #bbbb00;
+}
+
+@media (prefers-color-scheme: dark) {
+    .header>div>p>span {
+        color: #ffa;
+    }
 }
 
 .header>h3>p>span {
-    color: #aaa;
+    color: #777;
     font-size: 23px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .header>h3>p>span {
+        color: #aaa;
+    }
 }

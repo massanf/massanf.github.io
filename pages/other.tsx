@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     return (
-        <Template>
+        <Template pagename="other">
             <div className={styles.mainAreaTransparent}>
                 <div>
                     <OtherBlock delay={0} title={

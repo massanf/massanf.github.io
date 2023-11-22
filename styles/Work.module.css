@@ -4,12 +4,19 @@
     display: flex;
     position: relative;
     border-radius: 20px;
-    background-color: #111;
+    background-color: #eee;
     margin: auto;
     /* margin-top: 50px; */
     margin-bottom: 50px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
     flex: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+.workBlock{
+    background-color: #111;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.22);
+}
 }
 
 .heading {
@@ -66,19 +73,30 @@
 }
 
 .text a {
-    color: #EEEAE6;
+    color: #333;
     text-decoration: none;
 }
 
 .text a:hover {
-    color: #EEEAE6;
+    color: #000;
     text-decoration: underline;
 }
 
 .text>p>a {
-    color: #EEEAE6;
+    color: #000;
     text-decoration: underline;
 }
+
+@media (prefers-color-scheme: dark) {
+    .text a{
+        color: #EEEAE5;
+    }
+
+    .text a:hover {
+        color: #EEEAE6;
+    }
+}
+
 
 .mono {
     font-family: var(--font-mono);

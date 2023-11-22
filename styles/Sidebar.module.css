@@ -17,6 +17,11 @@
     text-decoration: none;
 }
 
+.sidebar a:hover {
+    color: #EEEAE6 !important;
+    text-decoration: underline;
+}
+
 /* Mobile */
 @media (max-width: 700px) {
     .sidebar {

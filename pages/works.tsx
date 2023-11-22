@@ -18,9 +18,9 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 const inter = Inter({ subsets: ['latin'] })
 
 
-export default function Home() {
+export default function Works() {
     return (
-        <Template>
+        <Template pagename="works">
             <div className={styles.mainAreaTransparent}>
                 <div>
                     <WorkBlock delay={0} img={lookout} title={

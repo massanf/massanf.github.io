@@ -34,12 +34,12 @@ export default function Home() {
             }}>
                 <div className={titleStyles.maincontainer}>
                     <div className={titleStyles.contentArea}>
-                        <TitleSidebar />
+                        <TitleSidebar title="index"/>
                         <div className={titleStyles.name}>
                             <div className={titleStyles.titleWrapper}>
                                 <span>Welcome to the page of</span>
                                 <h1 className={inter.className}>
-                                    Masayuki Fujita
+                                    <b>Masa</b> Fujita
                                 </h1>
                                 <div className={titleStyles.iconsWrap}>
                                     <a href="https://www.linkedin.com/in/masayuki-fujita-1509a821b/" target="_blank" aria-label="linkedin"><FontAwesomeIcon icon={faLinkedin} style={{ color: "00A0DC" }} className={titleStyles.icons} /></a>

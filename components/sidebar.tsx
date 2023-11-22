@@ -7,18 +7,18 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 
-export default function Sidebar() {
+export default function Sidebar( props : { title : string }) {
     return (
         // <SidebarContent sidebarStyle={sidebarStyle} />
         <div className={styles.contentArea}>
             <div className={sidebarStyle.sidebar}>
-                <Link href="/">- Home</Link>
-                <Link href="/hello">- Hello</Link>
-                <Link href="/works">- Open-source Works</Link>
-                <Link href="/academia">- Academia</Link>
-                <Link href="/carrer">- Carrer</Link>
-                <Link href="/qualifications">- Qualifications</Link>
-                <Link href="/other">- Other</Link>
+                <Link href="/">{props.title == "home" ? "+" : "-"} Home</Link>
+                <Link href="/hello">{props.title == "hello" ? "+" : "-"} Hello</Link>
+                <Link href="/works">{props.title == "works" ? "+" : "-"} Open-source Works</Link>
+                <Link href="/academia">{props.title == "academia" ? "+" : "-"}  Academia</Link>
+                <Link href="/carrer">{props.title == "carrer" ? "+" : "-"} Carrer</Link>
+                <Link href="/qualifications">{props.title == "qualifications" ? "+" : "-"} Qualifications</Link>
+                <Link href="/other">{props.title == "other" ? "+" : "-"} Other</Link>
             </div>
         </div>
     )
