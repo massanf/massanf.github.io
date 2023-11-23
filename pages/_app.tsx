@@ -1,6 +1,18 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+import { RecoilRoot } from "recoil";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+import Theme from "@/components/theme";
+import "@/styles/globals.css";
+
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
+  return (
+    <RecoilRoot>
+     <Component {...pageProps} />
+     <Theme>
+       <Component {...pageProps} />
+     </Theme>
+    </RecoilRoot>
+  );
+};
+
+export default MyApp;

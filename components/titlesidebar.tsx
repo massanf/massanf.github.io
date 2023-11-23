@@ -4,12 +4,14 @@ import { Inter } from 'next/font/google'
 import titleSidebarStyle from '../styles/TitleSidebar.module.css'
 import styles from '@/styles/Home.module.css'
 import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from 'react'
+import { useTheme } from "@/lib/theme";
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 
 export default function Sidebar(props: { title: string }) {
+    const { theme, toggleTheme } = useTheme();
     return (
         // <SidebarContent sidebarStyle={titleSidebarStyle} />
         <div className={styles.contentArea}>
@@ -22,6 +24,8 @@ export default function Sidebar(props: { title: string }) {
                 <Link href="/carrer">- Carrer</Link>
                 <Link href="/qualifications">- Qualifications</Link>
                 <Link href="/other">- Other</Link>
+                <button onClick={ toggleTheme } className={styles.darkModeButtonWrap}>
+                </button>
             </div>
         </div>
     )

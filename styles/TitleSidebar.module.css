@@ -13,7 +13,7 @@
 
 .sidebar a {
     display: block;
-    color: #EEEAE6;
+    color: #EEEAE6 !important;
     padding: 16px;
     text-decoration: none;
 }
@@ -22,17 +22,3 @@
     color: #EEEAE6 !important;
     text-decoration: underline;
 }
-
-/* Mobile */
-/* @media (max-width: 700px) {
-    .sidebar {
-        display: none;
-    }
-} */
-
-/* Tablet and Smaller Desktop */
-/* @media (min-width: 701px) and (max-width: 1120px) {
-    .sidebar {
-        display: none;
-    }
-} */

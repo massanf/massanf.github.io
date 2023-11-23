@@ -1,22 +1,20 @@
 .workBlock{
     width: 90%;
-    /* height: 300px; */
     display: flex;
     position: relative;
     border-radius: 20px;
-    background-color: #eee;
+    background-color: var(--c-background-primary);
     margin: auto;
-    /* margin-top: 50px; */
     margin-bottom: 50px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
     flex: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-.workBlock{
-    background-color: #111;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.22);
+[data-theme="light"] .workBlock {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
 }
+
+[data-theme="dark"] .workBlock {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .heading {
@@ -71,32 +69,6 @@
     line-height: 2.0;
     overflow: hidden;
 }
-
-.text a {
-    color: #333;
-    text-decoration: none;
-}
-
-.text a:hover {
-    color: #000;
-    text-decoration: underline;
-}
-
-.text>p>a {
-    color: #000;
-    text-decoration: underline;
-}
-
-@media (prefers-color-scheme: dark) {
-    .text a{
-        color: #EEEAE5;
-    }
-
-    .text a:hover {
-        color: #EEEAE6;
-    }
-}
-
 
 .mono {
     font-family: var(--font-mono);

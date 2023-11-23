@@ -2,12 +2,15 @@ import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import sidebarStyle from '../styles/Sidebar.module.css'
 import styles from '@/styles/Home.module.css'
-
+import { useTheme } from "@/lib/theme";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 const inter = Inter({ subsets: ['latin'] })
 
 
 export default function Sidebar( props : { title : string }) {
+    const { theme, toggleTheme } = useTheme();
     return (
         // <SidebarContent sidebarStyle={sidebarStyle} />
         <div className={styles.contentArea}>
@@ -19,6 +22,8 @@ export default function Sidebar( props : { title : string }) {
                 <Link href="/carrer">{props.title == "carrer" ? "+" : "-"} Carrer</Link>
                 <Link href="/qualifications">{props.title == "qualifications" ? "+" : "-"} Qualifications</Link>
                 <Link href="/other">{props.title == "other" ? "+" : "-"} Other</Link>
+                <button onClick={ toggleTheme } className={styles.darkModeButtonWrap}>
+                </button>
             </div>
         </div>
     )

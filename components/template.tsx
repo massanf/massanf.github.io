@@ -13,6 +13,7 @@ import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { useTheme } from "@/lib/theme";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function Template(props: { children: string | number | boolean | 
     const [state, setState] = useState({
         isPaneOpen: false
     });
+    const { theme, toggleTheme } = useTheme();
     return (
         <>
             <Head>
@@ -31,7 +33,7 @@ export default function Template(props: { children: string | number | boolean | 
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main} style={{
-                backgroundImage: `url(${bg.src})`,
+                // backgroundImage: `url(${bgUrl.src})`,
                 backgroundSize: 'cover',
                 // paddingLeft: 'env(safe-area-inset-left)',
                 // paddingRight: 'env(safe-area-inset-right)',
