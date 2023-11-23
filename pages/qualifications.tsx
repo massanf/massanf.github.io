@@ -5,20 +5,25 @@ import styles from '@/styles/Home.module.css'
 import qualificationsStyles from '@/styles/Qualifications.module.css'
 import QualificationsBlock from '../components/qualificationsblock'
 import Template from '../components/template'
-import atcoder from '../imgs/logos/atcoder.svg'
+import atcoder_light from '../imgs/logos/atcoder_light.svg'
+import atcoder_dark from '../imgs/logos/atcoder_dark.svg'
 import eiken from '../imgs/logos/eiken.webp'
-import toeic from '../imgs/logos/toeic.webp'
+import toeic_light from '../imgs/logos/toefl.webp'
+import toeic_dark from '../imgs/logos/toefl_dark.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import { motion } from 'framer-motion';
-
+import React, { useState, useEffect } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
 
-export default function Home() {
+export default function Qualifications() {
+    const [darkMode, setDarkMode] = useState(false); 
+    const atcoderUrl = darkMode ? atcoder_light : atcoder_dark;
     return (
-        <Template>
+        
+        <Template pagename="qualifications">
             <motion.div initial="hidden" animate="visible" variants={{
                 hidden: {
                     scale: 1,
@@ -39,7 +44,8 @@ export default function Home() {
                 </h2>
                 <QualificationsBlock delay={0.1} title="Coding Competitions">
                     <div className={qualificationsStyles.quality}>
-                        <ExportedImage src={atcoder} height={40} width={40} alt="atcoder logo" className={qualificationsStyles.logo} />
+                        <ExportedImage src={atcoder_dark} height={40} width={40} alt="atcoder logo" className={qualificationsStyles.logo_dark} />
+                        <ExportedImage src={atcoder_light} height={40} width={40} alt="atcoder logo" className={qualificationsStyles.logo_light} />
                         <div>
                             <div>
                                 <a href="https://www.atcoder.jp/user/trombiano1" target="_blank" style={{ color: "#45a6c6" }}>trombiano1</a>
@@ -67,7 +73,8 @@ export default function Home() {
                     </div>
 
                     <div className={qualificationsStyles.quality}>
-                        <ExportedImage src={toeic} height={30} width={40} alt="toeic logo" className={qualificationsStyles.logo} />
+                        <ExportedImage src={toeic_light} height={30} width={40} alt="toeic logo" className={qualificationsStyles.logo_light} />
+                        <ExportedImage src={toeic_dark} height={30} width={40} alt="toeic logo" className={qualificationsStyles.logo_dark} />
                         <div>
                             <div>
                                 <div>

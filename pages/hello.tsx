@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     return (
-        <Template>
+        <Template pagename="hello">
             <motion.div initial="hidden" animate="visible" variants={{
                 hidden: {
                     scale: 1,
@@ -37,7 +37,7 @@ export default function Home() {
                 <hr></hr>
 
                 <p className={styles.homep}>
-                    Ever since I can remember I&apos;ve always loved making things. In kindergarten, my parents would collect stuff like old cardbord boxes, toiletpaper cores or milk cartons for me to repurpose into imaginative objects like train models or &ldquo;automatic sushi maker&rdquo;.
+                    Ever since I can remember I&apos;ve always loved making things. In kindergarten, my parents would collect stuff like old cardbord boxes, toiletpaper cores or milk cartons for me to repurpose into imaginative objects like train models.
                 </p>
 
                 <hr></hr>
@@ -58,13 +58,13 @@ export default function Home() {
                 <hr></hr>
 
                 <p className={styles.homep}>
-                    The other important element of my life is my love for music. Learning the trombone alongside the piano, I was exposed to orchestral and chamber pieces as well as piano pieces from a very young age. The experience of listening to and performing classical music has since become essential to my life. I was fortunate enough to have experiences like holding leadership roles within my orchestra, guiding them musically.
+                    Another important element of my life is my love for music. Learning to play the piano alongside the trombone, I was exposed to orchestral and chamber pieces as well as piano pieces from a very young age. The experience of listening to and performing classical music has since become essential to my life. I was fortunate enough to have  the experience of holding leadership roles within my orchestra, guiding them musically.
                 </p>
 
                 <hr></hr>
                 
                 <p className={styles.homep}>
-                    Whether it&apos;s music or software or cardboard projects, I&apos;ve come to realize that the common thread that transpires throughout all my life experiences is that I really enjoy making <i>nice</i> things, whether it&apos;s music or code. Making music is not that different from engineering. You make something, improve it to the best of your abilities, make it as nice as possible, and make people&apos;s day a little bit better along the way. So I am so incredibly excited to see what I can bring into existence.
+                    Whether it&apos;s music or software or cardboard projects, I&apos;ve come to realize that the common thread  - <i>I really enjoy making nice things</i>. Whether that something is music or code. Making music is not that different from software engineering. You make something, improve it to the best of your abilities, make it as nice as possible, and make people&apos;s day a little bit better along the way. So I am so incredibly excited to see what I can bring into existence.
                 </p>
                 
                 <hr></hr>

@@ -5,8 +5,16 @@
     align-items: center;
     height: 100dvh;
     position: fixed;
-    background-color: #280000;
     background-position: right;
+}
+
+[data-theme="light"] .main {
+    background-image: url('../imgs/bg-masthead.webp');
+    background-color: #30AADC;
+}
+[data-theme="dark"] .main {
+    background-image: url('../imgs/dark-bg-masthead.webp');
+    background-color: #280000;
 }
 
 .description {
@@ -233,11 +241,75 @@
     color: #777;
 }
 
-.icons {
+.linkedIn {
     width: 25px;
+    font-size: 20px;
     margin-left: 20px;
     padding-top: 0px;
     vertical-align: middle;
+}
+
+[data-theme="light"] .linkedIn {
+    color: #fff;
+}
+[data-theme="dark"] .linkedIn {
+    color: #0077B5;
+}
+
+.github {
+    width: 25px;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-top: 0px;
+    vertical-align: middle;
+}
+
+[data-theme="light"] .github {
+    color: #fff;
+}
+[data-theme="dark"] .github {
+    color: #555;
+}
+
+.youtube {
+    width: 25px;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-top: 0px;
+    vertical-align: middle;
+}
+[data-theme="light"] .youtube {
+    color: #fff;
+}
+[data-theme="dark"] .youtube {
+    color: #f00;
+}
+
+.twitter {
+    width: 25px;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-top: 0px;
+    vertical-align: middle;
+}
+[data-theme="light"] .twitter {
+    color: #fff;
+}
+[data-theme="dark"] .twitter {
+    color: #1Da1F2;
+}
+
+.email {
+    width: 25px;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-top: 0px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.icon {
+    color: #fff !important;
 }
 
 .iconsWrap a {

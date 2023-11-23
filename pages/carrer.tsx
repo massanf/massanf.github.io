@@ -9,9 +9,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 
 
-export default function Home() {
+export default function Career() {
     return (
-        <Template>
+        <Template pagename="carrer">
             <motion.div className={styles.mainArea} initial="hidden" animate="visible" variants={{
                 hidden: {
                     scale: 1,
@@ -34,33 +34,27 @@ export default function Home() {
                 <CarrerBlock
                     title="Software Engineer"
                     company="Google Inc. - Intern"
-                    date="Jul. 2023 - Present"
+                    date="Jul. 2023 - Nov. 2023"
                     skills="C++ · Go"
                     delay={0}>
-                    Worked on ChromeOS frontend development, contributing multiple UI enhancements to the codebase.<br />
                     <ul>
-                    <li><a href="https://chromium-review.googlesource.com/c/chromium/src/+/4777021" target="_blank" className={styles.carrerLink}>4777021<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a></li>
-                    <li><a href="https://chromium-review.googlesource.com/c/chromium/src/+/4713908" target="_blank" className={styles.carrerLink}>4713908<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a></li>
-                    <li><a href="https://chromium-review.googlesource.com/c/chromium/src/+/4833011" target="_blank" className={styles.carrerLink}>4833011<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a></li>
-                    </ul> 
-                </CarrerBlock>
-
-                <CarrerBlock
-                    title="AI Academic Affairs Researchers"
-                    company="Nagase Brothers Inc. - Part Time"
-                    date="Jan. 2022 - Present"
-                    skills="Python · Microsoft Azure · Amazon Web Services · Google Cloud Platform"
-                    delay={0.1}>
-                    <ul>
-                    <li>Managed a software development team and streamlined operations by creating and maintaining automation methods</li>
-                    <li>Spearheaded ML integration for 100,000+ user app by leading product development</li>
+                    <li>Assigned to Google Japan's ChromeOS department as an intern, successfully implemented a new touch screen UI, resulting in a feature launch within a 4-month period.</li>
+                    <li>Contributed to the Chromium repository, a complex codebase involving VMs and hardware, completing the challenging project ahead of schedule.</li>
+                    <li>Managed and successfully completed two additional projects during the internship.</li>
+                    <li>Engaged in various development stages: understanding the code base, documenting, collaborating with UI/UX teams and PMs, conducting code reviews, and implementing unit and end-to-end testing.</li>
+                    <li>Ensured quality control by managing tests for different boards, bug identification and resolution, while also focusing on system development, safety verification, user support certification, and presenting results.</li>
                     </ul>
+                    List of all the code that I've contributed:
+                    <ul>
+                    <li><a href="https://chromium-review.googlesource.com/q/owner:massan@google.com" target="_blank" className={styles.carrerLink}>Chromium Gerrit (page 1)<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a></li>
+                    <li><a href="https://chromium-review.googlesource.com/q/owner:massan@google.com,25" target="_blank" className={styles.carrerLink}>Chromium Gerrit (page 2)<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a></li>
+                    </ul> 
                 </CarrerBlock>
 
                 <CarrerBlock
                     title="Application Engineer"
                     company={
-                        <p>Rakuten Summmer Short Internship - Internship  <span>1st place</span></p>
+                        <p>Rakuten Summmer Short Internship - Internship  <span><b>1st place</b></span></p>
                     }
                     date="Aug 2021"
                     skills="React Native · Firebase · Python · Machine Learning"
@@ -78,6 +72,19 @@ export default function Home() {
                     </ul>
                 </CarrerBlock>
 
+                <CarrerBlock
+                    title="AI Academic Affairs Researchers"
+                    company="Nagase Brothers Inc. - Part Time"
+                    date="Jan. 2022 - Present"
+                    skills="Python · Microsoft Azure · Amazon Web Services · Google Cloud Platform"
+                    delay={0.1}>
+                    <ul>
+                    <li>Managed a software development team and streamlined operations by creating and maintaining automation methods</li>
+                    <li>Spearheaded ML integration for 100,000+ user app by leading product development</li>
+                    </ul>
+                </CarrerBlock>
+
+               
                 <CarrerBlock
                     title={
                         <p>Teaching Assistant <span>&</span> Material Development</p>

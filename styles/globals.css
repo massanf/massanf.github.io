@@ -101,3 +101,25 @@ body {
     color-scheme: dark;
   }
 }
+
+a {
+  color: var(--c-primary) !important;
+}
+
+a:hover {
+  color: var(--c-primary) !important;
+}
+
+:root[data-theme="light"] {
+    /* ライトテーマで適用するプロパティ値 */
+    --c-primary: #333;
+    --c-soft: #888;
+    --c-background-primary: rgba(255, 255, 255, 0.8);
+  }
+  
+:root[data-theme="dark"] {
+    /* ダークテーマで適用するプロパティ値 */
+  --c-primary: #EEEAE6;
+  --c-soft: #EEEAE6;
+  --c-background-primary: rgba(0, 0, 0, 0.8);
+}

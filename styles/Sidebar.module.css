@@ -12,9 +12,14 @@
 
 .sidebar a {
     display: block;
-    color: #EEEAE6;
+    color: #EEEAE6 !important;
     padding: 16px;
     text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #EEEAE6 !important;
+    text-decoration: underline;
 }
 
 /* Mobile */
