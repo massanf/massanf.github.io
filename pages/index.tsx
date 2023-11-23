@@ -20,7 +20,7 @@ export default function Home() {
         <>
             <Head>
                 <title>Masayuki Fujita</title>
-                <meta name="theme-color" content="#280000" />
+                <meta name="theme-color" className={styles.themeColor}></meta>
                 <meta name="description" content="Introductory page of me." />
                 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
                 <meta name="apple-mobile-web-app-capable" content="yes" />

@@ -13,6 +13,13 @@
     overflow-x: hidden;
 }
 
+[data-theme="light"] .themeColor {
+    content: "#280000";
+}
+[data-theme="dark"] .themeColor {
+    content: "#16617F";
+}
+
 [data-theme="light"] .main {
     background-image: url('../imgs/bg-masthead.webp');
     background-position: 60% 50%;
