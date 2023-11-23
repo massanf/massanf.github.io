@@ -72,10 +72,6 @@
     color: var(--c-primary);
 }
 
-/* [data-theme="dark"] .date {
-    color: 
-} */
-
 .date ::before {
     content: '';
     position: absolute;
@@ -219,11 +215,17 @@
 }
 
 .footnote {
-    border-top: 1px solid #ddd;
     padding-top: 15px;
     font-size: 13px;
     text-align: right;
     color: #444;
+}
+
+[data-theme="light"] .footnote {
+    border-top: 1px solid #bbb;
+}
+[data-theme="dark"] .footnote {
+    border-top: 1px solid #ddd;
 }
 
 [data-theme="light"] .footnote>span {
