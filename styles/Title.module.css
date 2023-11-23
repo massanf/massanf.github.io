@@ -1,4 +1,7 @@
 .main {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,6 +14,7 @@
 [data-theme="light"] .main {
     background-image: url('../imgs/bg-masthead.webp');
     background-color: #30AADC;
+    background-position: 60% 50%;
 }
 [data-theme="dark"] .main {
     background-image: url('../imgs/dark-bg-masthead.webp');

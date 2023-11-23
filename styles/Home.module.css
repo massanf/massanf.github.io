@@ -9,18 +9,21 @@
     position: fixed;
     width: 100%;
     overflow: scroll;
-    background-position: right;
     min-height: 100vh;
     overflow-x: hidden;
 }
 
 [data-theme="light"] .main {
     background-image: url('../imgs/bg-masthead.webp');
+    background-position: 60% 50%;
+    background-repeat: no-repeat;
     background-color: #135671;
 }
 [data-theme="dark"] .main {
     background-image: url('../imgs/dark-bg-masthead.webp');
+    background-repeat: no-repeat;
     background-color: #280000;
+    background-position: center;
 }
 
 .description {
