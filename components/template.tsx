@@ -61,9 +61,9 @@ export default function Template(props: { children: string | number | boolean | 
                                 <div className={sidebarStyle.sidebar}>
                                      <Link href="/">{props.pagename == "home" ? "+" : "-"} Home</Link>
                                      <Link href="/hello">{props.pagename == "hello" ? "+" : "-"} Hello</Link>
-                                     <Link href="/works">{props.pagename == "works" ? "+" : "-"} Open-source Works</Link>
                                      <Link href="/academia">{props.pagename == "academia" ? "+" : "-"}  Academia</Link>
                                      <Link href="/carrer">{props.pagename == "carrer" ? "+" : "-"} Carrer</Link>
+                                     <Link href="/works">{props.pagename == "works" ? "+" : "-"} Open-source Works</Link>
                                      <Link href="/qualifications">{props.pagename == "qualifications" ? "+" : "-"} Qualifications</Link>
                                      <Link href="/other">{props.pagename == "other" ? "+" : "-"} Other</Link>
                                 </div>

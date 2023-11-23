@@ -17,9 +17,9 @@ export default function Sidebar( props : { title : string }) {
             <div className={sidebarStyle.sidebar}>
                 <Link href="/">{props.title == "home" ? "+" : "-"} Home</Link>
                 <Link href="/hello">{props.title == "hello" ? "+" : "-"} Hello</Link>
-                <Link href="/works">{props.title == "works" ? "+" : "-"} Open-source Works</Link>
                 <Link href="/academia">{props.title == "academia" ? "+" : "-"}  Academia</Link>
                 <Link href="/carrer">{props.title == "carrer" ? "+" : "-"} Carrer</Link>
+                <Link href="/works">{props.title == "works" ? "+" : "-"} Open-source Works</Link>
                 <Link href="/qualifications">{props.title == "qualifications" ? "+" : "-"} Qualifications</Link>
                 <Link href="/other">{props.title == "other" ? "+" : "-"} Other</Link>
                 <button onClick={ toggleTheme } className={styles.darkModeButtonWrap}>
