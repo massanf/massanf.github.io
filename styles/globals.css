@@ -114,7 +114,7 @@ a:hover {
     /* ライトテーマで適用するプロパティ値 */
     --c-primary: #333;
     --c-soft: #888;
-    --c-background-primary: rgba(255, 255, 255, 0.8);
+    --c-background-primary: rgba(255, 255, 255, 0.9);
   }
   
 :root[data-theme="dark"] {
