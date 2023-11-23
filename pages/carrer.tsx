@@ -38,13 +38,13 @@ export default function Career() {
                     skills="C++ · Go"
                     delay={0}>
                     <ul>
-                    <li>Assigned to Google Japan's ChromeOS department as an intern, successfully implemented a new touch screen UI, resulting in a feature launch within a 4-month period.</li>
+                    <li>Assigned to Google Japan&apos;s ChromeOS department as an intern, successfully implemented a new touch screen UI, resulting in a feature launch within a 4-month period.</li>
                     <li>Contributed to the Chromium repository, a complex codebase involving VMs and hardware, completing the challenging project ahead of schedule.</li>
                     <li>Managed and successfully completed two additional projects during the internship.</li>
                     <li>Engaged in various development stages: understanding the code base, documenting, collaborating with UI/UX teams and PMs, conducting code reviews, and implementing unit and end-to-end testing.</li>
                     <li>Ensured quality control by managing tests for different boards, bug identification and resolution, while also focusing on system development, safety verification, user support certification, and presenting results.</li>
                     </ul>
-                    List of all the code that I've contributed:
+                    List of all the code that I have contributed:
                     <ul>
                     <li><a href="https://chromium-review.googlesource.com/q/owner:massan@google.com" target="_blank" className={styles.carrerLink}>Chromium Gerrit (page 1)<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a></li>
                     <li><a href="https://chromium-review.googlesource.com/q/owner:massan@google.com,25" target="_blank" className={styles.carrerLink}>Chromium Gerrit (page 2)<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a></li>
