@@ -66,6 +66,7 @@ export default function Template(props: { children: string | number | boolean | 
                                      <Link href="/works">{props.pagename == "works" ? "+" : "-"} Open-source Works</Link>
                                      <Link href="/qualifications">{props.pagename == "qualifications" ? "+" : "-"} Qualifications</Link>
                                      <Link href="/other">{props.pagename == "other" ? "+" : "-"} Other</Link>
+                                     <button onClick={ toggleTheme } className={styles.darkModeButtonWrap}></button>
                                 </div>
                             </div>
                         </SlidingPane>
