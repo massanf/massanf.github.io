@@ -3,8 +3,7 @@ import TitleSidebar from '../components/titlesidebar'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import titleStyles from '@/styles/Title.module.css'
-import bg from '../imgs/bg-masthead.webp'
-import dark_bg from '../imgs/dark-bg-masthead.webp'
+import { useTheme } from "@/lib/theme";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
@@ -16,12 +15,14 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons"
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+    const { theme, toggleTheme } = useTheme();
+    const themeContent = theme == "light" ? "#16617F" : "#280000";
     return (
         <>
             <Head>
                 <title>Masayuki Fujita</title>
-                <meta name="theme-color" className={styles.themeColor}></meta>
-                <meta name="description" content="Introductory page of me." />
+                <meta name="theme-color" content={themeContent}></meta>
+                <meta name="description" content="An introductory page of me." />
                 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
                 <meta name="apple-mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
