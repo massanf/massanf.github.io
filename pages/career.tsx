@@ -61,10 +61,10 @@ export default function Career() {
                     delay={0.1}>
                     <ul>
                         <li>
-                        Focused on front-end mobile application development in a team of four developers
+                        Focused on front-end mobile application development in a team of four developers.
                         </li>
                         <li>
-                        Collaborated effectively, securing first place among over a dozen teams
+                        Collaborated effectively, securing first place among over a dozen teams.
                         </li>
                         <li>
                         Demonstrated ability to deliver high-quality results in time-sensitive conditions.
@@ -79,8 +79,8 @@ export default function Career() {
                     skills="Python · Microsoft Azure · Amazon Web Services · Google Cloud Platform"
                     delay={0.1}>
                     <ul>
-                    <li>Managed a software development team and streamlined operations by creating and maintaining automation methods</li>
-                    <li>Spearheaded ML integration for 100,000+ user app by leading product development</li>
+                    <li>Managed a software development team and streamlined operations by creating and maintaining automation methods.</li>
+                    <li>Spearheaded ML integration for 100,000+ user app by leading product development.</li>
                     </ul>
                 </CareerBlock>
 
@@ -95,19 +95,19 @@ export default function Career() {
                     delay={0.1}>
                     <ul>
                     <li>
-                    Instructed undergraduates on genetic programming, evolutionary computation, algorithms, and Unity fundamentals
+                    Instructed undergraduates on genetic programming, evolutionary computation, algorithms, and Unity fundamentals.
                     </li>
                     <li>
-                    Maintained and improved base projects for enhanced understanding
+                    Maintained and improved base projects for enhanced understanding.
                     </li>
                     <li>
-                    Expertise in genetic programming led to publication contributions
+                    Expertise in genetic programming led to publication contributions.
                     </li>
                     <li>
-                    Demonstrated commitment to knowledge-sharing and growth in computer science
+                    Demonstrated commitment to knowledge-sharing and growth in computer science.
                     </li>
                     <li>
-                    Dedicated to fostering academic excellence and nurturing upcoming talent
+                    Dedicated to fostering academic excellence and nurturing upcoming talent.
                     </li>
                     </ul>
                 </CareerBlock>
