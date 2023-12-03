@@ -1,11 +1,11 @@
-.carrerBlock {
+.careerBlock {
     padding: 20px;
     width: 95%;
     margin: auto;
     margin-bottom: 30px;
 }
 
-.carrerBlock:last-child {
+.careerBlock:last-child {
     margin-bottom: 10px;
 }
 
@@ -14,14 +14,14 @@
     border-bottom: 1px solid var(--c-primary);
 }
 
-[data-theme="light"] .carrerBlock {
+[data-theme="light"] .careerBlock {
     border: 1px solid #444;
 }
-[data-theme="dark"] .carrerBlock {
+[data-theme="dark"] .careerBlock {
     border: 1px solid #ccc;
 }
 
-.carrerBlock>.text {
+.careerBlock>.text {
     padding-top: 15px;
 }
 

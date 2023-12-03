@@ -6,7 +6,7 @@ import qualificationsStyles from '@/styles/Qualifications.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 
-export default function CarrerBlock(props: { delay: any; title: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; children: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined;  }) {
+export default function CareerBlock(props: { delay: any; title: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; children: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined;  }) {
     return (
         <>
             <motion.div className={qualificationsStyles.block} initial="hidden" animate="visible" variants={{
