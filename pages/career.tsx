@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Template from '../components/template'
-import CarrerBlock from '../components/carrerblock'
+import CareerBlock from '../components/careerblock'
 const inter = Inter({ subsets: ['latin'] })
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -11,7 +11,7 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 
 export default function Career() {
     return (
-        <Template pagename="carrer">
+        <Template pagename="career">
             <motion.div className={styles.mainArea} initial="hidden" animate="visible" variants={{
                 hidden: {
                     scale: 1,
@@ -29,9 +29,9 @@ export default function Career() {
             }}>
 
                 <h2 className={styles.heading}>
-                    <p className={inter.className}>Carrer</p>
+                    <p className={inter.className}>Career</p>
                 </h2>
-                <CarrerBlock
+                <CareerBlock
                     title="Software Engineer"
                     company="Google Inc. - Intern"
                     date="Jul. 2023 - Nov. 2023"
@@ -46,12 +46,12 @@ export default function Career() {
                     </ul>
                     List of all the code that I have contributed:
                     <ul>
-                    <li><a href="https://chromium-review.googlesource.com/q/owner:massan@google.com" target="_blank" className={styles.carrerLink}>Chromium Gerrit (page 1)<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a></li>
-                    <li><a href="https://chromium-review.googlesource.com/q/owner:massan@google.com,25" target="_blank" className={styles.carrerLink}>Chromium Gerrit (page 2)<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a></li>
+                    <li><a href="https://chromium-review.googlesource.com/q/owner:massan@google.com" target="_blank" className={styles.careerLink}>Chromium Gerrit (page 1)<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a></li>
+                    <li><a href="https://chromium-review.googlesource.com/q/owner:massan@google.com,25" target="_blank" className={styles.careerLink}>Chromium Gerrit (page 2)<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} /></a></li>
                     </ul> 
-                </CarrerBlock>
+                </CareerBlock>
 
-                <CarrerBlock
+                <CareerBlock
                     title="Application Engineer"
                     company={
                         <p>Rakuten Summmer Short Internship - Internship  <span><b>1st place</b></span></p>
@@ -70,9 +70,9 @@ export default function Career() {
                         Demonstrated ability to deliver high-quality results in time-sensitive conditions.
                         </li>
                     </ul>
-                </CarrerBlock>
+                </CareerBlock>
 
-                <CarrerBlock
+                <CareerBlock
                     title="AI Academic Affairs Researchers"
                     company="Nagase Brothers Inc. - Part Time"
                     date="Jan. 2022 - Present"
@@ -82,10 +82,10 @@ export default function Career() {
                     <li>Managed a software development team and streamlined operations by creating and maintaining automation methods</li>
                     <li>Spearheaded ML integration for 100,000+ user app by leading product development</li>
                     </ul>
-                </CarrerBlock>
+                </CareerBlock>
 
                
-                <CarrerBlock
+                <CareerBlock
                     title={
                         <p>Teaching Assistant <span>&</span> Material Development</p>
                     }
@@ -110,7 +110,7 @@ export default function Career() {
                     Dedicated to fostering academic excellence and nurturing upcoming talent
                     </li>
                     </ul>
-                </CarrerBlock>
+                </CareerBlock>
             </motion.div>
         </Template >
     )
