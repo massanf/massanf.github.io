@@ -44,7 +44,7 @@ export default function Works() {
                                 <a href="https://qiita.com/trombiano1/items/f54f67dd90e7ec8e3709" target="_blank">Qiita</a>
                             </span>
                             <span className={workStyles.projectLinks}>
-                                <FontAwesomeIcon icon={faGithub} className={workStyles.brandIcon} /><a href="https://github.com/trombiano1/lookout" target="_blank">
+                                <FontAwesomeIcon icon={faGithub} className={workStyles.brandIcon} /><a href="https://github.com/massanf/lookout" target="_blank">
                                     GitHub
                                 </a>
                             </span>
@@ -65,7 +65,7 @@ export default function Works() {
                                 <FontAwesomeIcon icon={faTwitter} className={workStyles.brandIcon} /><a href="https://www.twitter.com/concerthallinfo" target="_blank">
                                     twitter
                                 </a>
-                                <FontAwesomeIcon icon={faGithub} className={workStyles.brandIcon} /><a href="https://github.com/trombiano1/applemusicconcerthall" target="_blank">
+                                <FontAwesomeIcon icon={faGithub} className={workStyles.brandIcon} /><a href="https://github.com/massanf/applemusicconcerthall" target="_blank">
                                     GitHub
                                 </a>
                             </span>
@@ -92,7 +92,7 @@ export default function Works() {
                                 <a href="https://qiita.com/trombiano1/items/aacee3c576e0fd19d417" target="_blank">Qiita</a>
                             </span>
                             <span className={workStyles.projectLinks}>
-                                <FontAwesomeIcon icon={faGithub} className={workStyles.brandIcon} /><a href="https://github.com/trombiano1/vscode-compcalc" target="_blank">
+                                <FontAwesomeIcon icon={faGithub} className={workStyles.brandIcon} /><a href="https://github.com/massanf/vscode-compcalc" target="_blank">
                                     GitHub
                                 </a>
                             </span>
