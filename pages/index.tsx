@@ -20,7 +20,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Masayuki Fujita</title>
+                <title>Masa Fujita</title>
                 <meta name="theme-color" content={themeContent}></meta>
                 <meta name="description" content="An introductory page of me." />
                 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
