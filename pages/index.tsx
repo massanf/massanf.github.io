@@ -20,7 +20,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Masayuki Fujita</title>
+                <title>Masa Fujita</title>
                 <meta name="theme-color" content={themeContent}></meta>
                 <meta name="description" content="An introductory page of me." />
                 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -43,7 +43,7 @@ export default function Home() {
                                 </h1>
 
                                 <div className={titleStyles.iconsWrap}>
-                                    <a href="https://www.linkedin.com/in/masayuki-fujita-1509a821b/" target="_blank" aria-label="linkedin"><FontAwesomeIcon icon={faLinkedin} className={titleStyles.linkedIn} id="linkedInIcon" /></a>
+                                    <a href="https://www.linkedin.com/in/masa-fujita/" target="_blank" aria-label="linkedin"><FontAwesomeIcon icon={faLinkedin} className={titleStyles.linkedIn} id="linkedInIcon" /></a>
                                     <a href="https://www.github.com/massanf" target="_blank" aria-label="github"><FontAwesomeIcon icon={faGithub} className={titleStyles.github} /></a>
                                     <a href="https://www.youtube.com/channel/UC0ftq_FkXueNKpLYeKmfIaA" target="_blank" aria-label="youtube"><FontAwesomeIcon icon={faYoutube} className={titleStyles.youtube} /></a>
                                     <a href="https://www.twitter.com/sudocaffeine" target="_blank" aria-label="twitter"><FontAwesomeIcon icon={faTwitter} className={titleStyles.twitter} /></a>

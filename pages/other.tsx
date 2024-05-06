@@ -22,7 +22,7 @@ export default function Home() {
                     </OtherBlock>
 
                     <OtherBlock delay={0.2} title={
-                        <a href="https://github.com/trombiano1/todai-denkikei-titlepage" target="_blank">
+                        <a href="https://github.com/massanf/todai-denkikei-titlepage" target="_blank">
                             EEIC Thesis LaTeX Template <FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
                         </a>
                     }>
