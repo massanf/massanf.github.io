@@ -100,6 +100,7 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
     const targetText = 'Nagar Anthel Venkatesh Suryanarayanan';
+    const clearRecordBtn = document.getElementById('clear-record-btn');
     const typingInput = document.getElementById('typing-input');
     const timeDisplay = document.getElementById('time-display');
     const recordDisplay = document.getElementById('record-display');
@@ -164,6 +165,12 @@ document.addEventListener('DOMContentLoaded', () => {
         shareText.select();
         document.execCommand('copy');
     });
+
+    clearRecordBtn.addEventListener('click', () => {
+        localStorage.removeItem('typingRecord');
+        recordTime = '-';
+        recordDisplay.textContent = 'Your record: -';
+    });
 });
 
     </script>
@@ -180,6 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p id="time-display">Time: 0.00 s</p>
       <p id="record-display">Your record: -</p>
       <button id="restart-btn">Restart</button>
+      <button id="clear-record-btn">Clear Record</button>
       <div id="share-container" style="display: none">
         <textarea type="text" id="share-text" rows="5" readonly></textarea>
         <p><button id="copy-btn">Copy</button></p>
