@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typingInput.value === targetText) {
             stopTimer();
             const elapsedTime = (Date.now() - startTime) / 1000;
-            timeDisplay.innerHTML = `Time: <b>${elapsedTime.toFixed(2)} s</b> (${(37 / elapsedTime).toFixed(2)} keys / s)`;
+            timeDisplay.innerHTML = `Time: <b>${elapsedTime.toFixed(2)} s</b> (${(37 / elapsedTime.toFixed(2)).toFixed(2)} keys / s)`;
 
             if (recordTime === '-' || elapsedTime < parseFloat(recordTime)) {
                 recordTime = elapsedTime.toFixed(2);
