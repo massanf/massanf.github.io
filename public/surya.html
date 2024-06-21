@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Game</title>
+    <style>
+      /* styles.css */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        text-align: center;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      .target-text {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      input[type="text"] {
+        width: 90%;
+        padding: 10px;
+        font-size: 1em;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      #time-display,
+      #record-display {
+        margin-top: 10px;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1em;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      #share-container {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #share-text {
+        padding: 10px;
+        font-size: 1em;
+        width: 70%;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      #copy-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+        border: none;
+        border-radius: 4px;
+        background-color: #28a745;
+        color: white;
+        cursor: pointer;
+      }
+
+      #copy-btn:hover {
+        background-color: #218838;
+      }
+    </style>
+    <script>
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const targetText = 'Nagar Anthel Venkatesh Suryanarayanan';
+    const typingInput = document.getElementById('typing-input');
+    const timeDisplay = document.getElementById('time-display');
+    const recordDisplay = document.getElementById('record-display');
+    const restartBtn = document.getElementById('restart-btn');
+    const shareContainer = document.getElementById('share-container');
+    const shareText = document.getElementById('share-text');
+    const copyBtn = document.getElementById('copy-btn');
+
+    let startTime = null;
+    let timerInterval = null;
+    let recordTime = localStorage.getItem('typingRecord') || '-';
+
+    recordDisplay.textContent = `Record: ${recordTime !== '-' ? parseFloat(recordTime).toFixed(2) + ' s' : '-'}`;
+
+    const startTimer = () => {
+        startTime = Date.now();
+        timerInterval = setInterval(() => {
+            const elapsedTime = (Date.now() - startTime) / 1000;
+            timeDisplay.textContent = `Time: ${elapsedTime.toFixed(2)} s`;
+        }, 100);
+    };
+
+    const stopTimer = () => {
+        clearInterval(timerInterval);
+    };
+
+    typingInput.addEventListener('input', () => {
+        if (startTime === null) {
+            startTimer();
+        }
+
+        if (typingInput.value === targetText) {
+            stopTimer();
+            const elapsedTime = (Date.now() - startTime) / 1000;
+            timeDisplay.textContent = `Time: ${elapsedTime.toFixed(2)} s`;
+
+            if (recordTime === '-' || elapsedTime < parseFloat(recordTime)) {
+                recordTime = elapsedTime.toFixed(2);
+                localStorage.setItem('typingRecord', recordTime);
+                recordDisplay.textContent = `Your record: ${recordTime} s`;
+                const shareMessage = `I just achieved a record time of ${recordTime} seconds in the typing game! Can you beat my score?`;
+                shareText.value = shareMessage;
+                shareContainer.style.display = "block";
+            }
+            typingInput.disabled = true;
+            const shareMessage = `I just achieved ${recordTime} Surya! Can you beat my score? \n https://massanf.github.io/surya`;
+            shareText.value = shareMessage;
+            shareContainer.style.display = "block";
+        }
+    });
+
+    restartBtn.addEventListener('click', () => {
+        typingInput.value = '';
+        typingInput.disabled = false;
+        startTime = null;
+        timeDisplay.textContent = 'Time: 0.00 s';
+        stopTimer();
+        typingInput.focus();
+    });
+
+    copyBtn.addEventListener('click', () => {
+        shareText.select();
+        document.execCommand('copy');
+    });
+});
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Surya Typing</h1>
+      <p>Type Surya-san's full name as fast as you can:</p>
+      <input
+        type="text"
+        id="typing-input"
+        placeholder="Nagar Anthel Venkatesh Suryanarayanan"
+      />
+      <p id="time-display">Time: 0.00 s</p>
+      <p id="record-display">Your record: -</p>
+      <button id="restart-btn">Restart</button>
+      <div id="share-container" style="display: none">
+        <textarea type="text" id="share-text" rows="5" readonly></textarea>
+        <p><button id="copy-btn">Copy</button></p>
+      </div>
+    </div>
+  </body>
+</html>
