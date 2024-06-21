@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let timerInterval = null;
     let recordTime = localStorage.getItem('typingRecord') || '-';
 
-    recordDisplay.textContent = `Your record: ${recordTime !== '-' ? parseFloat(recordTime).toFixed(2) + ' s' : '-'}`;
+    recordDisplay.innerHTML = `Your record: <b>${recordTime !== '-' ? parseFloat(recordTime).toFixed(2) + ' s' : '-'}</b> (${recordTime !== '-' ? (37 / parseFloat(recordTime)).toFixed(2) : '-'} keys / s)`;
 
     const startTimer = () => {
         startTime = Date.now();
@@ -144,18 +144,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typingInput.value === targetText) {
             stopTimer();
             const elapsedTime = (Date.now() - startTime) / 1000;
-            timeDisplay.textContent = `Time: ${elapsedTime.toFixed(2)} s`;
+            timeDisplay.innerHTML = `Time: <b>${elapsedTime.toFixed(2)} s</b> (${(37 / elapsedTime).toFixed(2)} keys / s)`;
 
             if (recordTime === '-' || elapsedTime < parseFloat(recordTime)) {
                 recordTime = elapsedTime.toFixed(2);
                 localStorage.setItem('typingRecord', recordTime);
-                recordDisplay.textContent = `Your record: ${recordTime} s`;
+                recordDisplay.innerHTML = `Your record: <b>${recordTime !== '-' ? parseFloat(recordTime).toFixed(2) + ' s' : '-'}</b> (${recordTime !== '-' ? (37 / parseFloat(recordTime)).toFixed(2) : '-'} keys / s)`;
                 const shareMessage = `I just achieved a record time of ${recordTime} seconds in the typing game! Can you beat my score?`;
                 shareText.value = shareMessage;
                 shareContainer.style.display = "block";
             }
             typingInput.disabled = true;
-            const shareMessage = `I just achieved ${recordTime} Surya! Can you beat my score? \nhttps://massanf.github.io/surya`;
+            const shareMessage = `I just achieved ${elapsedTime} Surya! Can you beat my score? \nhttps://massanf.github.io/surya`;
             shareText.value = shareMessage;
             shareContainer.style.display = "block";
         }
