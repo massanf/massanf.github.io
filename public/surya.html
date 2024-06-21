@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let timerInterval = null;
     let recordTime = localStorage.getItem('typingRecord') || '-';
 
-    recordDisplay.textContent = `Record: ${recordTime !== '-' ? parseFloat(recordTime).toFixed(2) + ' s' : '-'}`;
+    recordDisplay.textContent = `Your record: ${recordTime !== '-' ? parseFloat(recordTime).toFixed(2) + ' s' : '-'}`;
 
     const startTimer = () => {
         startTime = Date.now();
