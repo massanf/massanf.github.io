@@ -223,7 +223,14 @@
 
 .ieeexplore {
     font-size: 13px;
+}
+
+[data-theme="light"] .ieeexplore {
     color: #aaa !important;
+}
+
+[data-theme="light"] .ieeexplore {
+    color: #555 !important;
 }
 
 [data-theme="light"] .footnote {
