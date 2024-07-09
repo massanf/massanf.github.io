@@ -221,6 +221,11 @@
     color: #444;
 }
 
+.ieeexplore {
+    font-size: 13px;
+    color: #aaa !important;
+}
+
 [data-theme="light"] .footnote {
     border-top: 1px solid #bbb;
 }
