@@ -9,7 +9,15 @@ import { Button, Slider, Typography, Checkbox, FormControlLabel, Switch, Box } f
 
 const inter = Inter({ subsets: ['latin'] });
 
-const NOTES = ["C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"];
+const NOTES = [
+    "C♭", "C", "C♯",
+    "D♭", "D", "D♯",
+    "E♭", "E", "E♯",
+    "F♭", "F", "F♯",
+    "G♭", "G", "G♯",
+    "A♭", "A", "A♯",
+    "B♭", "B", "B♯",
+];
 const STRINGS = [1, 2, 3, 4, 5, 6];
 
 export default function Home() {
@@ -115,6 +123,10 @@ export default function Home() {
                 </h2>
 
                 <GuitarBlock delay={0.1} title="Random Note Generator">
+                    <p>
+                        For note finding exercise on guitar / bass.
+                    </p>
+
                     <p>
                         <span style={{ fontSize: "48px", fontWeight: "bold" }}>{note}</span>
                         {useStrings &&
