@@ -147,19 +147,14 @@ export default function Home() {
                     />
                     <div>
                         <FormControlLabel
-                            control={
-                                <Checkbox
-                                    checked={clickEnabled}
-                                    onChange={(e) => setClickEnabled(e.target.checked)}
-                                />
-                            }
-                            label="Enable Click"
+                            control={<Switch checked={clickEnabled} onChange={(e) => setClickEnabled(e.target.checked)} />}
+                            label="Enable click"
                         />
                     </div>
                     <div>
                         <FormControlLabel
                             control={<Switch checked={useStrings} onChange={() => setUseStrings(!useStrings)} />}
-                            label="Enable Strings"
+                            label="Specify string"
                         />
                         {useStrings && (
                             <Box display="wrap" gap={1} my={2}>
