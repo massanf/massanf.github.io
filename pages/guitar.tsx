@@ -150,7 +150,7 @@ export default function Home() {
                             label="Enable Strings"
                         />
                         {useStrings && (
-                            <Box display="flex" gap={1} my={2}>
+                            <Box display="wrap" gap={1} my={2}>
                                 {STRINGS.map((string) => (
                                     <FormControlLabel
                                         key={string}
