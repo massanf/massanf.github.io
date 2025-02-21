@@ -16,7 +16,7 @@ export default function Sidebar( props : { title : string }) {
         <div className={styles.contentArea}>
             <div className={sidebarStyle.sidebar}>
                 <Link href="/">{props.title == "home" ? "+" : "-"} Home</Link>
-                <Link href="/hello">{props.title == "hello" ? "+" : "-"} Hello</Link>
+                {/* <Link href="/hello">{props.title == "hello" ? "+" : "-"} Hello</Link> */}
                 <Link href="/academia">{props.title == "academia" ? "+" : "-"}  Academia</Link>
                 <Link href="/career">{props.title == "career" ? "+" : "-"} Career</Link>
                 <Link href="/works">{props.title == "works" ? "+" : "-"} Open-source Works</Link>

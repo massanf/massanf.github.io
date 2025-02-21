@@ -70,9 +70,8 @@ export default function Home() {
         const gainNode = audioCtx.createGain();
 
         oscillator.type = "sine";
-        oscillator.frequency.setValueAtTime(1000, audioCtx.currentTime);
-        gainNode.gain.setValueAtTime(0.2, audioCtx.currentTime);
-        gainNode.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.05);
+        oscillator.frequency.setValueAtTime(500, audioCtx.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.05);
 
         oscillator.connect(gainNode);
         gainNode.connect(audioCtx.destination);

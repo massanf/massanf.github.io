@@ -59,7 +59,7 @@ export default function Template(props: { children: string | number | boolean | 
                             <div className={styles.contentArea}>
                                 <div className={sidebarStyle.sidebar}>
                                     <Link href="/">{props.pagename == "home" ? "+" : "-"} Home</Link>
-                                    <Link href="/hello">{props.pagename == "hello" ? "+" : "-"} Hello</Link>
+                                    {/* <Link href="/hello">{props.pagename == "hello" ? "+" : "-"} Hello</Link> */}
                                     <Link href="/academia">{props.pagename == "academia" ? "+" : "-"}  Academia</Link>
                                     <Link href="/career">{props.pagename == "career" ? "+" : "-"} Career</Link>
                                     <Link href="/works">{props.pagename == "works" ? "+" : "-"} Open-source Works</Link>

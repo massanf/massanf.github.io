@@ -18,7 +18,7 @@ export default function Sidebar(props: { title: string }) {
             <div className={titleSidebarStyle.sidebar}>
                 {/* <Link href="/">- Home</Link> */}
                 <Link href="/">+ Home </Link>
-                <Link href="/hello">- Hello</Link>
+                {/* <Link href="/hello">- Hello</Link> */}
                 <Link href="/academia">- Academia</Link>
                 <Link href="/career">- Career</Link>
                 <Link href="/works">- Open-source Works</Link>

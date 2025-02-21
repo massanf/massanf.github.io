@@ -6,6 +6,7 @@ import workStyles from '@/styles/Work.module.css'
 import Template from '../components/template'
 import concerthall from '../imgs/works/concerthall.webp'
 import lookout from '../imgs/works/lookout.webp'
+import chromium from '../imgs/works/chromium.png'
 import competitive from '../imgs/works/competitive.webp'
 import qiita from '../imgs/logos/qiita.webp'
 import WorkBlock from '../components/workblock'
@@ -23,6 +24,15 @@ export default function Works() {
         <Template pagename="works">
             <div className={styles.mainAreaTransparent}>
                 <div>
+                    <WorkBlock delay={0} img={chromium} title={
+                        <a href="https://www.chromium.org/chromium-projects/" target="_blank">
+                            Chromium<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
+                        </a>
+                    } color={"#ebebeb"} links={<></>}>
+                    Contributed to the Chromium project, a large-scale open-source browser codebase, implementing features across UI and system components, optimizing performance, and ensuring compatibility with various platforms, while collaborating with engineers, conducting rigorous testing, and reviewing code to maintain stability and security.
+                        </WorkBlock>
+
+
                     <WorkBlock delay={0} img={lookout} title={
                         <a href="https://pypi.org/project/lookout-python/" target="_blank">
                             Lookout Notifier<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
@@ -61,7 +71,7 @@ export default function Works() {
                     } color={"#ea2200"} links={
                         <div>
                             <span className={workStyles.projectLinks}>
-                                <a href="https://www.concerthall.info" target="_blank">concerthall.info</a>
+                                concerthall.info
                                 <FontAwesomeIcon icon={faTwitter} className={workStyles.brandIcon} /><a href="https://www.twitter.com/concerthallinfo" target="_blank">
                                     twitter
                                 </a>
@@ -71,7 +81,7 @@ export default function Works() {
                             </span>
                         </div>
                     }>
-                        <span className={workStyles.mono}>concerthall.info</span> is a small project I created to make it easier to find numerous classical music performances using Apple Music API and open-source API project Open Opus with Node.js, Express, SQL and Bootstrap 5.
+                        <span className={workStyles.mono}>concerthall.info</span> <i>was</i> a small project I created to make it easier to find numerous classical music performances using Apple Music API and open-source API project Open Opus with Node.js, Express, SQL and Bootstrap 5. Some of my friends used to use it until the much better Apple Music Classical came out.
                     </WorkBlock>
 
                     <WorkBlock delay={0.1} img={competitive} title={

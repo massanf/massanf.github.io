@@ -42,7 +42,7 @@ export default function Qualifications() {
                 <h2 className={styles.heading}>
                     <p className={inter.className}>Qualifications</p>
                 </h2>
-                <QualificationsBlock delay={0.1} title="Coding Competitions">
+                {/* <QualificationsBlock delay={0.1} title="Coding Competitions">
                     <div className={qualificationsStyles.quality}>
                         <ExportedImage src={atcoder_dark} height={40} width={40} alt="atcoder logo" className={qualificationsStyles.logo_dark} />
                         <ExportedImage src={atcoder_light} height={40} width={40} alt="atcoder logo" className={qualificationsStyles.logo_light} />
@@ -56,7 +56,7 @@ export default function Qualifications() {
                             </div>
                         </div>
                     </div>
-                </QualificationsBlock>
+                </QualificationsBlock> */}
 
                 <QualificationsBlock delay={0.3} title="English">
                     <div className={qualificationsStyles.quality}>
@@ -72,20 +72,20 @@ export default function Qualifications() {
                         </div>
                     </div>
 
-                    <div className={qualificationsStyles.quality}>
-                        <ExportedImage src={toeic_light} height={30} width={40} alt="toeic logo" className={qualificationsStyles.logo_light} />
-                        <ExportedImage src={toeic_dark} height={30} width={40} alt="toeic logo" className={qualificationsStyles.logo_dark} />
-                        <div>
-                            <div>
-                                <div>
-                                    980 (R: 495, L: 485) - 2021
-                                </div>
-                                <div  className={qualificationsStyles.qualityName}>TOEIC® L & R
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
+                    {/* <div className={qualificationsStyles.quality}> */}
+                        {/* <ExportedImage src={toeic_light} height={30} width={40} alt="toeic logo" className={qualificationsStyles.logo_light} /> */}
+                        {/* <ExportedImage src={toeic_dark} height={30} width={40} alt="toeic logo" className={qualificationsStyles.logo_dark} /> */}
+                        {/* <div> */}
+                            {/* <div> */}
+                                {/* <div> */}
+                                    {/* 980 (R: 495, L: 485) - 2021 */}
+                                {/* </div> */}
+                                {/* <div  className={qualificationsStyles.qualityName}>TOEIC® L & R */}
+{/*                                      */}
+                                {/* </div> */}
+                            {/* </div> */}
+                        {/* </div> */}
+                    {/* </div>  */}
                 </QualificationsBlock>
             </motion.div>
         </Template>

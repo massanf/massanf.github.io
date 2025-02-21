@@ -13,14 +13,6 @@ export default function Home() {
         <Template pagename="other">
             <div className={styles.mainAreaTransparent}>
                 <div>
-                    <OtherBlock delay={0} title={
-                        <a href="http://進捗.com/" target="_blank">
-                            進捗.com<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
-                        </a>
-                    }>
-                        For when you&apos;ve made absolutely no progress.
-                    </OtherBlock>
-
                     <OtherBlock delay={0.2} title={
                         <a href="https://github.com/massanf/todai-denkikei-titlepage" target="_blank">
                             EEIC Thesis LaTeX Template <FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
@@ -28,6 +20,14 @@ export default function Home() {
                     }>
                         Unofficial LuaLaTeX template that matches example given by the department.
                     </OtherBlock>
+                    <OtherBlock delay={0.2} title={
+                        <a href="/guitar" target="_blank">
+                            Guitar Utils<FontAwesomeIcon icon={faUpRightFromSquare} className={styles.externalLinkIcon} />
+                        </a>
+                    }>
+                        Guitar utils, made in like 15 mins :P
+                    </OtherBlock>
+
                 </div>
             </div>
         </Template>
